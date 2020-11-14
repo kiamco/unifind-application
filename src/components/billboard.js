@@ -5,6 +5,7 @@ import boardBg from '../assets/img/mainBg.png';
 import cover from '../assets/img/union.png';
 import {regFont} from './themes/color';
 import {secondaryBtn} from './themes/components';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
     root: {
@@ -61,7 +62,10 @@ const Billboard = () => {
                     <Typography className={classes.mainHeader} variant='h3'>Plan Your Future.</Typography>
                     <Typography className={classes.mainMesg}variant='body'>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
                 lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </Typography>
-                    <Button className={classes.createBtn}>Create an Account</Button>
+                    
+                    <Link style={{textDecoration:'none'}} to='/signUp'>
+                        <Button className={classes.createBtn}>Create an Account</Button>
+                    </Link>
                 </Box>
 
             </Box>
