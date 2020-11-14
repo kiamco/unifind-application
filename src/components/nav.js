@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import {Link} from  'react-router-dom';
 import {primaryBgColor, mainBlue, mainRed, fontLogo} from './themes/color';
-// import {primaryBtn} from './themes/components';
+import {primaryBtn} from './themes/components';
 
 const useStyles = makeStyles({
     root: {
@@ -19,13 +19,15 @@ const useStyles = makeStyles({
         display:'flex'
     },
     leftLogo:{
-        color: `${mainBlue}`
+        color: `${mainBlue}`,
+        fontFamily: fontLogo
     },
     rightLogo:{
-        color: `${mainRed}`
+        color: `${mainRed}`,
+        fontFamily: fontLogo
     },
     toolbarButton: {
-        // ...primaryBtn
+        ...primaryBtn
     },
     toolbarIcon: {
         marginRight:'10px',
@@ -49,20 +51,14 @@ const Nav = ({login}) => {
             <AppBar position='static' className={classes.nav}>
                 <Toolbar className={classes.rightToolbar} >
                     <Link style={{textDecoration:'none'}} to='/'>
-                        <Box className={classes.logo} style={{fontFamily:fontLogo}}>
+                        <Box className={classes.logo}>
                         <Typography variant="h4" className={classes.leftLogo}>Uni</Typography>
                         <Typography variant="h4" className={classes.rightLogo}>find</Typography>
                         </Box>
                     </Link>
                     <Box >
-                        <IconButton className={classes.toolbarIcon} aria-label="show 4 new mails" color="primary">
-                            <Badge badgeContent={4} color='secondary'>
-                                <ShoppingCartIcon color='primary'/>
-                            </Badge>
-                        </IconButton>
-                        <Link style={{textDecoration:'none'}} to='/signIn'>
+                        <Link style={{textDecoration:'none'}} to='/login'>
                         {!login ? <Button size="large" variant='outlined' className={classes.toolbarButton}>Login</Button> : ""}
-
                         </Link>
                     </Box>
 
