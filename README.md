@@ -7,10 +7,10 @@
   - This application will make it easy for our users to schedule a 1:1 meetings with current college students.  Users should be able to login, signup, and schedule their 1:1's.
 
 ### MVP
-  - [ ] Login
+  - [x] Login
   - [ ] Sign up
   - [ ] User Dashboard
-  - [ ] User should be able to view list of university representatives by college
+  - [x] User should be able to view list of university representatives by college
   - [ ] User should be able to schedule 20 or 40 minute 1:1's with any of the representatives
   - [ ] Once the user user has chosen a schedule a confrimation email should be sent out 
   - [ ] payments hould be possible through paypal
