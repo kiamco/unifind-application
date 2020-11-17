@@ -19,14 +19,14 @@ const useStyles = makeStyles({
     }
 })
 
-const CollegeList = () => {
+const CollegeList = (props) => {
 
     const classes = useStyles();
     return(
         <Box className={classes.root}>
             <Box className={classes.wrapper}>
             {
-                Colleges.map(el => <CollegeCard {...el}/>)
+                Colleges.map(el => <CollegeCard {...props} {...el}/>)
             }
             </Box>
             

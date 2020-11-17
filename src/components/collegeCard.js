@@ -22,9 +22,14 @@ const useStyles = makeStyles({
     }
 });
 
-const CollegeCard = ({ college, city, country, point1, point2, imgPath }) => {
+const CollegeCard = ({ college, city, country, point1, point2, imgPath, ...props}) => {
 
     const classes = useStyles();
+    
+    const onClickHandler = (e) => {
+        e.preventDefault();
+        props.history.push(`/reps/${college}`);
+    };
 
     return (
         <Card className={classes.root}>
@@ -46,7 +51,11 @@ const CollegeCard = ({ college, city, country, point1, point2, imgPath }) => {
                 </CardContent>
             </CardActionArea>
             <CardActions className={classes.actions}>
-                <Button className={classes.repBtn} size="small" color="primary">
+                <Button 
+                className={classes.repBtn} 
+                size="small" 
+                color="primary"
+                onClick={onClickHandler}>
                     Find Representative
                 </Button>
             </CardActions>

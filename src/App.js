@@ -9,17 +9,14 @@ import './index.css'
 
 
 function App(props) {
-  console.log(props)
   return (
     <div className="App">
       <Route exact path='/' component={Home} />
       <Route exact path='/login' render={props => <Login {...props} />}/>
       <Route exact path='/signup' component={Signup} />
-      <PrivateRoute exact path='/reps'  component={RepDash} />
-
-
+      <PrivateRoute exact path='/reps/:collegeName' component={RepDash} />
     </div>
   );
-}
+};
 
 export default App;

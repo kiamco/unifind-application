@@ -5,13 +5,13 @@ import Billboard from '../components/billboard';
 import Options from '../components/options';
 import CollegeList from '../components/collegeList';
 
-const Home = () => {
+const Home = (props) => {
     return (
         <Box>
             <Nav />
             <Billboard />
             {/* <Options /> */}
-            <CollegeList />
+            <CollegeList {...props} />
 
         </Box>
     );
