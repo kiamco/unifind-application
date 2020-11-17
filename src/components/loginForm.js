@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -15,6 +15,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import primarySignInImg from '../assets/img/login.png'
 import {NavLink} from 'react-router-dom';
 import {mainBlue} from './themes/color';
+import Axios from 'axios';
 
 function Copyright() {
   return (
@@ -74,8 +75,36 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-const SignInForm = () => {
+const SignInForm = (props) => {
+
   const classes = useStyles();
+
+  console.log(props)
+  const [input, setInput] = useState({
+      email:'',
+      password:''
+  });
+
+  const onChangeHandler = (e) => {
+    setInput({...input, [e.target.name]:e.target.value})
+  }
+
+  const submitForm = (e) => {
+    e.preventDefault(e);
+    
+    const headers = {
+        'Content-Type': 'application/json',
+    }
+    Axios.post('http://localhost:3000/login', input, headers)
+    .then(res => {
+        console.log(res)
+        props.history.push(`/dashboard`)
+    })
+    .catch(e => {
+        console.log(e)
+    })
+
+  }
 
   return (
       <Box className={classes.formContainer}>
@@ -90,7 +119,7 @@ const SignInForm = () => {
           <Typography component="h1" variant="h5">
             Sign In
           </Typography>
-          <form className={classes.form} noValidate>
+          <form className={classes.form} onSubmit={submitForm} noValidate>
             <TextField
               variant="outlined"
               margin="normal"
@@ -101,6 +130,7 @@ const SignInForm = () => {
               name="email"
               autoComplete="email"
               autoFocus
+              onChange={(e) => onChangeHandler(e)}
             />
             <TextField
               variant="outlined"
@@ -112,6 +142,8 @@ const SignInForm = () => {
               type="password"
               id="password"
               autoComplete="current-password"
+              onChange={(e) => onChangeHandler(e)}
+
             />
 
             <Button

@@ -8,41 +8,119 @@ const colleges = [{
         college: 'Willfrid Laurier University',
         city: 'Waterloo',
         country:'Canada',
-        point1:'',
-        point2:'',
-        imgPath:Laurier
+        desc:'',
+        imgPath:Laurier,
+        reps:[
+            {
+                name:"some name",
+                type:"rep type"
+            },
+            {
+                name:"some name",
+                type:"rep type"
+            },
+            {
+                name:"some name",
+                type:"rep type"
+            },
+            {
+                name:"some name",
+                type:"rep type"
+            },
+
+        ]
     },
     {
         college: 'Western University',
         city: 'Ontario',
         country:'Canada',
-        point1:'',
-        point2:'',
-        imgPath:Western
+        desc:'',
+        imgPath:Western,
+        reps:[{
+            name:"some name",
+            type:"rep type"
+        },
+        {
+            name:"some name",
+            type:"rep type"
+        },
+        {
+            name:"some name",
+            type:"rep type"
+        },
+        {
+            name:"some name",
+            type:"rep type"
+        },]
     },
     {
         college: 'York University',
         city: 'York',
         country:'Canada',
-        point1:'',
-        point2:'',
-        imgPath:York
+        desc:'',
+        imgPath:York,
+        reps:[{
+            name:"some name",
+            type:"rep type"
+        },
+        {
+            name:"some name",
+            type:"rep type"
+        },
+        {
+            name:"some name",
+            type:"rep type"
+        },
+        {
+            name:"some name",
+            type:"rep type"
+        },]
     },
     {
         college: 'Schulich School of Business',
         city: 'Ontario',
         country:'Canada',
-        point1:'',
-        point2:'',
-        imgPath:Schulic
+        desc:'',
+        imgPath:Schulic,
+        reps:[{
+            name:"some name",
+            type:"rep type"
+        },
+        {
+            name:"some name",
+            type:"rep type"
+        },
+        {
+            name:"some name",
+            type:"rep type"
+        },
+        {
+            name:"some name",
+            type:"rep type"
+        },]
     },
     {
         college: 'University of Toronto',
         city: 'Toronto',
         country:'Canada',
-        point1:'',
-        point2:'',
-        imgPath:Toronto
+        desc:'',
+        imgPath:Toronto,
+        reps:[{
+            name:"some name",
+            type:"rep type"
+        },
+        {
+            name:"some name",
+            type:"rep type"
+        },
+        {
+            name:"some name",
+            type:"rep type"
+        },
+        {
+            name:"some name",
+            type:"rep type"
+        },]
     }
 ];
 
