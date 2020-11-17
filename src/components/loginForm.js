@@ -86,25 +86,26 @@ const SignInForm = (props) => {
   });
 
   const onChangeHandler = (e) => {
-    setInput({...input, [e.target.name]:e.target.value})
-  }
+    setInput({...input, [e.target.name]:e.target.value});
+  };
 
   const submitForm = (e) => {
     e.preventDefault(e);
     
     const headers = {
         'Content-Type': 'application/json',
-    }
+    };
+
     Axios.post('http://localhost:3000/login', input, headers)
     .then(res => {
-        console.log(res)
-        props.history.push(`/dashboard`)
+        props.history.push(`/reps`);
+        localStorage.setItem('token',res.data.jwt);
     })
     .catch(e => {
         console.log(e)
-    })
+    });
 
-  }
+  };
 
   return (
       <Box className={classes.formContainer}>
