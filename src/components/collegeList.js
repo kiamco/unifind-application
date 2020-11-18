@@ -26,7 +26,7 @@ const CollegeList = (props) => {
         <Box className={classes.root}>
             <Box className={classes.wrapper}>
             {
-                Colleges.map(el => <CollegeCard {...props} {...el}/>)
+                Colleges.map(el => <CollegeCard key={props.college} {...props} {...el}/>)
             }
             </Box>
             
