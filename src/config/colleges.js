@@ -11,22 +11,32 @@ const colleges = [{
         desc: '',
         imgPath: Laurier,
         reps: [{
-                name: "some name",
+                name: "Andrew Pohner",
                 type: "rep type",
                 calendarLink: "some uri"
             },
             {
-                name: "some name",
+                name: "Cameron Michaels",
                 type: "rep type",
                 calendarLink: "some uri"
             },
             {
-                name: "some name",
+                name: "Dara Heravi",
                 type: "rep type",
                 calendarLink: "some uri"
             },
             {
-                name: "some name",
+                name: "Sydney Doyle",
+                type: "rep type",
+                calendarLink: "some uri"
+            },
+            {
+                name: "Talia Pitt",
+                type: "rep type",
+                calendarLink: "some uri"
+            },
+            {
+                name: "Veronica Magolon",
                 type: "rep type",
                 calendarLink: "some uri"
             },
@@ -50,12 +60,17 @@ const colleges = [{
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21260138&calendarID=4743440"
             },
             {
-                name: "some name",
+                name: "Jane McDonald",
                 type: "rep type",
                 calendarLink: "some uri"
             },
             {
-                name: "some name",
+                name: "Rishwanth Sunkara",
+                type: "rep type",
+                calendarLink: "some uri"
+            },
+            {
+                name: "Trent Hambleton",
                 type: "rep type",
                 calendarLink: "some uri"
             },
@@ -68,22 +83,27 @@ const colleges = [{
         desc: '',
         imgPath: York,
         reps: [{
-                name: "some name",
+                name: "Aarushi",
                 type: "rep type",
                 calendarLink: "some uri"
             },
             {
-                name: "some name",
+                name: "Althea Reyes",
                 type: "rep type",
                 calendarLink: "some uri"
             },
             {
-                name: "some name",
+                name: "Rabia Toqeer",
                 type: "rep type",
                 calendarLink: "some uri"
             },
             {
-                name: "some name",
+                name: "Saksham Sethi",
+                type: "rep type",
+                calendarLink: "some uri"
+            },
+            {
+                name: "Yashvi Chheda",
                 type: "rep type",
                 calendarLink: "some uri"
             },
@@ -95,51 +115,52 @@ const colleges = [{
         country: 'Canada',
         desc: '',
         imgPath: Schulic,
-        reps: [{
-                name: "some name",
+        reps: [
+            {
+                name: "Aakanksha Bhat",
                 type: "rep type",
                 calendarLink: "some uri"
             },
             {
-                name: "some name",
+                name: "Ava Tamizifar",
                 type: "rep type",
                 calendarLink: "some uri"
             },
             {
-                name: "some name",
+                name: "Rosella Cioffi",
                 type: "rep type",
                 calendarLink: "some uri"
-            },
-            {
-                name: "some name",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
+            }
         ]
     },
     {
-        college: 'University of Toronto',
+        college: 'Ryerson University',
         city: 'Toronto',
         country: 'Canada',
         desc: '',
         imgPath: Toronto,
         reps: [{
-                name: "some name",
+                name: "Brian Lee",
                 type: "rep type",
                 calendarLink: "some uri"
             },
             {
-                name: "some name",
+                name: "Caroline Cachero",
                 type: "rep type",
                 calendarLink: "some uri"
             },
             {
-                name: "some name",
+                name: "Daniel Wong",
                 type: "rep type",
                 calendarLink: "some uri"
             },
             {
-                name: "some name",
+                name: "Matthew Choi",
+                type: "rep type",
+                calendarLink: "some uri"
+            },
+            {
+                name: "Yuvna Jayant",
                 type: "rep type",
                 calendarLink: "some uri"
             },
