@@ -1,8 +1,9 @@
-import Laurier from '../assets/img/collegeBanners/laurier-uni.jpg'
-import Western from '../assets/img/collegeBanners/western0uni.jpg'
-import York from '../assets/img/collegeBanners/york-uni.png'
-import Schulic from '../assets/img/collegeBanners/schulic-uni.jpeg'
-import Toronto from '../assets/img/collegeBanners/toronto-uni.jpg'
+import Laurier from '../assets/img/collegeBanners/laurier-uni.jpg';
+import Western from '../assets/img/collegeBanners/western0uni.jpg';
+import York from '../assets/img/collegeBanners/york-uni.png';
+import Schulic from '../assets/img/collegeBanners/schulic-uni.jpeg';
+import Toronto from '../assets/img/collegeBanners/toronto-uni.jpg';
+import Ryerson from '../assets/img/collegeBanners/reyrson-uni.jpg';
 
 const colleges = [{
         college: 'Willfrid Laurier University',
@@ -139,6 +140,40 @@ const colleges = [{
         country: 'Canada',
         desc: '',
         imgPath: Toronto,
+        reps: [{
+                name: "Brian Lee",
+                type: "rep type",
+                calendarLink: "some uri"
+            },
+            {
+                name: "Caroline Cachero",
+                type: "rep type",
+                calendarLink: "some uri"
+            },
+            {
+                name: "Daniel Wong",
+                type: "rep type",
+                calendarLink: "some uri"
+            },
+            {
+                name: "Matthew Choi",
+                type: "rep type",
+                calendarLink: "some uri"
+            },
+            {
+                name: "Yuvna Jayant",
+                type: "rep type",
+                calendarLink: "some uri"
+            },
+        ],
+        
+    },
+    {
+        college: 'University of Toronto',
+        city: 'Toronto',
+        country: 'Canada',
+        desc: '',
+        imgPath: Ryerson,
         reps: [{
                 name: "Brian Lee",
                 type: "rep type",

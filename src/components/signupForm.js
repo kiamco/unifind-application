@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -14,6 +14,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import primaryImg from '../assets/img/signup.png';
 import {mainBlue} from './themes/color';
+import Axios from 'axios';
 
 function Copyright() {
   return (
@@ -73,8 +74,36 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-const CreateAccountForm = () => {
+const CreateAccountForm = (props) => {
   const classes = useStyles();
+
+  const [inputs, setInputs] = useState({
+    email:'',
+    name:'',
+    password:'',
+    verifyPassword:''
+  });
+
+  const onChangeHandler = (e) => {
+    e.preventDefault();
+    setInputs({...inputs,[e.target.name]:e.target.value});
+    console.log(inputs);
+  };
+
+  const onSubmitHanlder = (e) => {
+    e.preventDefault();
+    const headers = {
+      'Content-Type': 'application/json'
+    };
+
+    Axios.post('http://localhost:3000/register',inputs, headers)
+    .then(res => {
+      console.log(res);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+  };
 
   return (
       <Box className={classes.formContainer}>
@@ -89,7 +118,7 @@ const CreateAccountForm = () => {
           <Typography component="h1" variant="h5">
             Sign Up
           </Typography>
-          <form className={classes.form} noValidate>
+          <form className={classes.form} onSubmit={(e) => onSubmitHanlder(e)} noValidate>
             <TextField
               variant="outlined"
               margin="normal"
@@ -100,6 +129,20 @@ const CreateAccountForm = () => {
               name="email"
               autoComplete="email"
               autoFocus
+              onChange={onChangeHandler}
+            />
+            <TextField
+              variant="outlined"
+              margin="normal"
+              required
+              fullWidth
+              id="name"
+              label="Name"
+              name="name"
+              autoComplete="name"
+              autoFocus 
+             onChange={onChangeHandler}
+
             />
             <TextField
               variant="outlined"
@@ -111,6 +154,8 @@ const CreateAccountForm = () => {
               type="password"
               id="password"
               autoComplete="current-password"
+              onChange={onChangeHandler}
+
             />
             <TextField
               variant="outlined"
@@ -122,6 +167,7 @@ const CreateAccountForm = () => {
               type="password"
               id="verifypassword"
               autoComplete="current-password"
+              onChange={onChangeHandler}
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
