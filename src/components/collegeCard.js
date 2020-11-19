@@ -26,6 +26,7 @@ const CollegeCard = ({ college, city, country, point1, point2, imgPath, ...props
 
     const classes = useStyles();
     
+    console.log(props)
     const onClickHandler = (e) => {
         e.preventDefault();
         props.history.push(`/reps/${college}`);

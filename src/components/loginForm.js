@@ -98,8 +98,9 @@ const SignInForm = (props) => {
 
     Axios.post('http://localhost:3000/login', input, headers)
     .then(res => {
-        props.history.push(`/reps`);
         localStorage.setItem('token',res.data.jwt);
+        localStorage.setItem('username',res.data.username)
+        props.history.push(`/dashboard/${res.data.username}`);
     })
     .catch(e => {
         console.log(e)
@@ -164,7 +165,7 @@ const SignInForm = (props) => {
               </Grid>
               <Grid item>
                 
-                <NavLink to='/createAccount'>
+                <NavLink to='/signup'>
                   {"Don't have an account? Sign Up"}
                 </NavLink>
               </Grid>

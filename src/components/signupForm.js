@@ -75,6 +75,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const CreateAccountForm = (props) => {
+
   const classes = useStyles();
 
   const [inputs, setInputs] = useState({
@@ -99,6 +100,9 @@ const CreateAccountForm = (props) => {
     Axios.post('http://localhost:3000/register',inputs, headers)
     .then(res => {
       console.log(res);
+      // TODO: redirect dashboard
+      props.history.push(`/dashboard/${inputs.name}`)
+
     })
     .catch(err => {
       console.log(err);

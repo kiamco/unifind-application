@@ -9,7 +9,7 @@ const RepDash = (props) => {
     console.log(props)
     return(
         <Box>
-            <Nav login={true}/>
+            <Nav login={true} name={localStorage.getItem('username')}/>
             <RepView {...props} />
         </Box>
     )

@@ -22,6 +22,7 @@ const useStyles = makeStyles({
 const CollegeList = (props) => {
 
     const classes = useStyles();
+    console.log(props)
     return(
         <Box className={classes.root}>
             <Box className={classes.wrapper}>
