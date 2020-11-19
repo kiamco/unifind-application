@@ -2,11 +2,11 @@ import React from 'react';
 import Nav from '../components/nav';
 import LoginForm from '../components/loginForm';
 
-const Login = () => {
+const Login = (props) => {
     return(
         <>
         <Nav login={true}></Nav>
-        <LoginForm />
+        <LoginForm {...props}/>
         </>
     )
     
