@@ -15,6 +15,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import primarySignInImg from '../assets/img/login.png'
 import {NavLink} from 'react-router-dom';
 import {mainBlue} from './themes/color';
+import ErrorMessage from './errorMsg';
 import Axios from 'axios';
 
 function Copyright() {
@@ -79,11 +80,11 @@ const SignInForm = (props) => {
 
   const classes = useStyles();
 
-  console.log(props)
   const [input, setInput] = useState({
       email:'',
       password:''
   });
+  const [isLoginErr, setIsLoginErr] = useState(null);
 
   const onChangeHandler = (e) => {
     setInput({...input, [e.target.name]:e.target.value});
@@ -94,15 +95,19 @@ const SignInForm = (props) => {
     
     const headers = {
         'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin':'*'
     };
 
-    Axios.post('http://localhost:3000/login', input, headers)
+    Axios.post('https://unifind-server.herokuapp.com/login', input, headers)
     .then(res => {
-        props.history.push(`/reps`);
         localStorage.setItem('token',res.data.jwt);
+        localStorage.setItem('username',res.data.username);
+        props.history.push(`/dashboard/${res.data.username}`);
+        setIsLoginErr(false);
     })
     .catch(e => {
-        console.log(e)
+        console.log(e);
+        setIsLoginErr(true);
     });
 
   };
@@ -120,8 +125,10 @@ const SignInForm = (props) => {
           <Typography component="h1" variant="h5">
             Sign In
           </Typography>
+
           <form className={classes.form} onSubmit={submitForm} noValidate>
             <TextField
+              error={isLoginErr}
               variant="outlined"
               margin="normal"
               required
@@ -134,6 +141,7 @@ const SignInForm = (props) => {
               onChange={(e) => onChangeHandler(e)}
             />
             <TextField
+              error={isLoginErr}
               variant="outlined"
               margin="normal"
               required
@@ -146,7 +154,11 @@ const SignInForm = (props) => {
               onChange={(e) => onChangeHandler(e)}
 
             />
+          {
+            //if login does not find any user show err mesg
+            isLoginErr ? <ErrorMessage message="email/password does not match" /> : ""
 
+          }
             <Button
               type="submit"
               fullWidth
@@ -164,7 +176,7 @@ const SignInForm = (props) => {
               </Grid>
               <Grid item>
                 
-                <NavLink to='/createAccount'>
+                <NavLink to='/signup'>
                   {"Don't have an account? Sign Up"}
                 </NavLink>
               </Grid>
