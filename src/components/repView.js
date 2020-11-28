@@ -12,7 +12,6 @@ import transitions from '@material-ui/core/styles/transitions';
 const useStyles = makeStyles({
     root: {
         margin:'50px 200px'
-        
     },
     repWrapper:{
         maxWidth: '600px',

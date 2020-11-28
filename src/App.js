@@ -6,6 +6,7 @@ import RepDash from './pages/repDashboard';
 import Dashboard from './pages/dashboard';
 import { Route } from 'react-router-dom';
 import PrivateRoute from './components/auth/privateRoute';
+import {Container} from '@material-ui/core';
 import './index.css'
 
 
