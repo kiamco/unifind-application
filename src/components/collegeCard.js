@@ -6,6 +6,7 @@ import {regFont} from './themes/color';
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
+        minWidth: 300,
         margin:'20px auto'
     },
     media: {
@@ -26,7 +27,6 @@ const CollegeCard = ({ college, city, country, point1, point2, imgPath, ...props
 
     const classes = useStyles();
     
-    console.log(props)
     const onClickHandler = (e) => {
         e.preventDefault();
         props.history.push(`/reps/${college}`);
@@ -38,16 +38,11 @@ const CollegeCard = ({ college, city, country, point1, point2, imgPath, ...props
                 <CardMedia
                     className={classes.media}
                     image={imgPath}
-                    title="Contemplative Reptile"
                 />
                 <CardContent>
                     <Typography className={classes.font} gutterBottom variant="h6" component="h2">
                         {college}
                     <Typography className={classes.font} variant='body2'> in {city},{country}</Typography>
-                    </Typography>
-                    <Typography className={classes.font} variant="body2" color="textSecondary" component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
                     </Typography>
                 </CardContent>
             </CardActionArea>
