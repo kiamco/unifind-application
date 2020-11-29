@@ -196,9 +196,19 @@ const colleges = [{
             },
             {
                 name: "Yuvna Jayant",
-                type: "rep type",
-                calendarLink: "some uri"
+                type: "Academic Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4786438"
             },
+            {
+                name: "Elaine Wang",
+                type: "Academic/ResLife Rep",
+                calendarLink:"https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4776097"
+            },
+            {
+                name: "Craig Deng",
+                type:"International Relations Rep",
+                calendarLink:"https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4776103"
+            }
         ]
     }
 ];
