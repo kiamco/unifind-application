@@ -66,11 +66,22 @@ const Nav = ({ login, name, ...props }) => {
         setAnchorEl(null);
      };
 
+     const linkHandler = () => {
+
+        let username = window.localStorage.getItem('username');
+        
+        if(username){
+            return `/dashboard/${username}`
+        } else {
+            return '/'
+        };
+     };
+
     return (
         <nav >
             <AppBar position='static' className={classes.nav}>
                 <Toolbar className={classes.rightToolbar} >
-                    <Link style={{ textDecoration: 'none' }} to='/'>
+                    <Link style={{ textDecoration: 'none' }} to={linkHandler()}>
                         <Box className={classes.logo}>
                             <Typography variant="h4" className={classes.leftLogo}>Uni</Typography>
                             <Typography variant="h4" className={classes.rightLogo}>find</Typography>

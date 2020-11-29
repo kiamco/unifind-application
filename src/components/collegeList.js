@@ -5,21 +5,33 @@ import CollegeCard from './collegeCard';
 import Colleges from '../config/colleges';
 import {secondaryBgColor} from './themes/color';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles( theme => ({
     root:{
         background:secondaryBgColor,
         display:'flex',
         justifyContent:'center',
-        height:'100vh'
+        minheight:'100vh'
     },
     wrapper:{
         display:'grid',
         gridGap:'10px',
         gridTemplateColumns:'300px 300px 300px 300px 300px',
         gridTemplateRows:'300px 300px 300px 300px 300px',
-        margin:'0 50px'
+        margin:'0 50px',
+        [theme.breakpoints.down('lg')]:{
+            gridTemplateColumns:'300px 300px 300px ',
+            gridTemplateRows:'300px 300px 300px ', 
+        },
+        [theme.breakpoints.down('md')]:{
+            gridTemplateColumns:'300px 300px ',
+            gridTemplateRows:'300px 300px', 
+        },
+        [theme.breakpoints.down('xs')]:{
+            gridTemplateColumns:'300px ',
+            gridTemplateRows:'300px ', 
+        }
     }
-})
+}));
 
 const CollegeList = (props) => {
 
