@@ -76,7 +76,11 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     marginTop: '50px'
-  }
+  },
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 1,
+    color: '#fff',
+  },
 
 }));
 
@@ -103,7 +107,7 @@ const CreateAccountForm = (props) => {
   };
 
   const createPost = (inputs, headers) => {
-    return Axios.post('http://localhost:3000/register', inputs, headers)
+    return Axios.post('https://unifind-server.herokuapp.com/register', inputs, headers)
       .then(res => {
         return res.data
       })
@@ -125,25 +129,52 @@ const CreateAccountForm = (props) => {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*'
     };
+    
 
-    //check if email is valid and password match
-    if(emailIsValid(inputs.email)){
-      createPost(inputs, headers)
+    if(inputs.password !== inputs.verifyPassword || !emailIsValid(inputs.email)){
+
+      // password check
+      if (inputs.password !== inputs.verifyPassword) {
+        setSignUpErr(prevState => {
+          return { ...prevState, passwordMatch: true }
+        });
+      } else {
+        setSignUpErr(prevState => {
+          return { ...prevState, passwordMatch: false }
+        });
+      };
+  
+      //email check
+      if (!emailIsValid(inputs.email)) {
+        setSignUpErr(prevState => {
+          return { ...prevState, emailValid: true }
+        });
+      } else {
+        setSignUpErr(prevState => {
+          return { ...prevState, emailValid: false }
+        });
+      }
+
+      return 0
+    }
+    
+
+
+    createPost(inputs, headers)
       .then(res => {
-        if(res.message === "user already exists"){
+        if (res.message === "user already exists") {
           setSignUpErr(prevState => {
-            return {...prevState,emailExists:true}
+            return { ...prevState, emailExists: true }
           });
           setIsLoading(false);
         } else {
           setIsLoading(false);
-          console.log(res)
           localStorage.setItem('token', res.jwt);
           localStorage.setItem('username', res.response.name);
           props.history.push(`/dashboard/${localStorage.getItem('username')}`);
         }
-      })
-    };
+      });
+
 
   };
 
@@ -151,8 +182,8 @@ const CreateAccountForm = (props) => {
     <Box className={classes.formContainer}>
       <Backdrop className={classes.backdrop} open={isLoading} >
 
-<CircularProgress color="inherit" />
-</Backdrop>
+        <CircularProgress color="inherit" />
+      </Backdrop>
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
         <Grid item xs={false} sm={4} md={7} className={classes.image} />
@@ -221,6 +252,9 @@ const CreateAccountForm = (props) => {
               }
               {
                 signUpErr.emailExists ? <ErrorMessage message="email exists" /> : ""
+              }
+              {
+                signUpErr.emailValid ? <ErrorMessage message="email invalid" /> : ""
               }
               {/* <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
