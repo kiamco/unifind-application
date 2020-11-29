@@ -10,28 +10,27 @@ const useStyles = makeStyles({
         background:secondaryBgColor,
         display:'flex',
         justifyContent:'center',
+        height:'100vh'
     },
     wrapper:{
         display:'grid',
         gridGap:'10px',
-        gridTemplateColumns:'1fr 1fr 1fr 1fr 1fr',
-        margin:'auto 50px'
+        gridTemplateColumns:'300px 300px 300px 300px 300px',
+        gridTemplateRows:'300px 300px 300px 300px 300px',
+        margin:'0 50px'
     }
 })
 
 const CollegeList = (props) => {
 
     const classes = useStyles();
-    console.log(props)
     return(
         <Box className={classes.root}>
             <Box className={classes.wrapper}>
             {
-                Colleges.map(el => <CollegeCard key={props.college} {...props} {...el}/>)
+                Colleges.map(el => <CollegeCard key={el.college} {...props} {...el}/>)
             }
             </Box>
-            
-
         </Box>
     )
 };
