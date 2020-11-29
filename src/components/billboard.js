@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Button, Container } from '@material-ui/core';
+import { Box, Typography, Button} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import boardBg from '../assets/img/mainBg.png';
 import cover from '../assets/img/union.png';
