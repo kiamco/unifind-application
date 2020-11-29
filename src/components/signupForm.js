@@ -76,7 +76,11 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     marginTop: '50px'
-  }
+  },
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 1,
+    color: '#fff',
+  },
 
 }));
 
@@ -103,7 +107,7 @@ const CreateAccountForm = (props) => {
   };
 
   const createPost = (inputs, headers) => {
-    return Axios.post('http://localhost:3000/register', inputs, headers)
+    return Axios.post('https://unifind-server.herokuapp.com/register', inputs, headers)
       .then(res => {
         return res.data
       })
@@ -126,7 +130,7 @@ const CreateAccountForm = (props) => {
       'Access-Control-Allow-Origin': '*'
     };
     
-    
+
     if(inputs.password !== inputs.verifyPassword || !emailIsValid(inputs.email)){
 
       // password check
