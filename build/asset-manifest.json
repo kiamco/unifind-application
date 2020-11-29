@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cd0652a4.chunk.css",
+    "main.js": "/static/js/main.a69538c0.chunk.js",
+    "main.js.map": "/static/js/main.a69538c0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2e15a6d6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2e15a6d6.js.map",
+    "static/js/2.252608a6.chunk.js": "/static/js/2.252608a6.chunk.js",
+    "static/js/2.252608a6.chunk.js.map": "/static/js/2.252608a6.chunk.js.map",
+    "static/js/3.7e1f26aa.chunk.js": "/static/js/3.7e1f26aa.chunk.js",
+    "static/js/3.7e1f26aa.chunk.js.map": "/static/js/3.7e1f26aa.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.cd0652a4.chunk.css.map": "/static/css/main.cd0652a4.chunk.css.map",
+    "static/js/2.252608a6.chunk.js.LICENSE.txt": "/static/js/2.252608a6.chunk.js.LICENSE.txt",
+    "static/media/laurier-uni.99576298.jpg": "/static/media/laurier-uni.99576298.jpg",
+    "static/media/login.96009236.png": "/static/media/login.96009236.png",
+    "static/media/mainBg.a1cd6464.png": "/static/media/mainBg.a1cd6464.png",
+    "static/media/reyrson-uni.fa21c58f.jpg": "/static/media/reyrson-uni.fa21c58f.jpg",
+    "static/media/schulic-uni.e17ebfeb.jpeg": "/static/media/schulic-uni.e17ebfeb.jpeg",
+    "static/media/signup.751effde.png": "/static/media/signup.751effde.png",
+    "static/media/toronto-uni.b3e23541.jpg": "/static/media/toronto-uni.b3e23541.jpg",
+    "static/media/western0uni.b4513f76.jpg": "/static/media/western0uni.b4513f76.jpg",
+    "static/media/york-uni.2ca8532d.png": "/static/media/york-uni.2ca8532d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e15a6d6.js",
+    "static/js/2.252608a6.chunk.js",
+    "static/css/main.cd0652a4.chunk.css",
+    "static/js/main.a69538c0.chunk.js"
+  ]
+}
