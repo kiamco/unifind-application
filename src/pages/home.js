@@ -4,6 +4,7 @@ import Nav from '../components/nav';
 import Billboard from '../components/billboard';
 import Options from '../components/options';
 import CollegeList from '../components/collegeList';
+import Footer from '../components/footer';
 
 const Home = (props) => {
     return (
@@ -12,6 +13,7 @@ const Home = (props) => {
             <Billboard />
             {/* <Options /> */}
             <CollegeList {...props} />
+            <Footer />
 
         </Box>
     );
