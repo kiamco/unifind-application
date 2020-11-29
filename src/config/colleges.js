@@ -11,36 +11,37 @@ const colleges = [{
         country: 'Canada',
         desc: '',
         imgPath: Laurier,
-        reps: [{
-                name: "Andrew Pohner",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Cameron Michaels",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Dara Heravi",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Sydney Doyle",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Talia Pitt",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Veronica Magolon",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
+        reps: [
+            // {
+            //     name: "Andrew Pohner",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Cameron Michaels",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Dara Heravi",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Sydney Doyle",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Talia Pitt",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Veronica Magolon",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
 
         ]
     },
@@ -50,31 +51,32 @@ const colleges = [{
         country: 'Canada',
         desc: '',
         imgPath: Western,
-        reps: [{
-                name: "Adam Dilouya",
-                type: "rep p type",
-                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21260138&calendarID=4743434"
-            },
-            {
-                name: "Matt Parkin",
-                type: "rep type",
-                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21260138&calendarID=4743440"
-            },
-            {
-                name: "Jane McDonald",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Rishwanth Sunkara",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Trent Hambleton",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
+        reps: [
+            // {
+            //     name: "Adam Dilouya",
+            //     type: "rep p type",
+            //     calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21260138&calendarID=4743434"
+            // },
+            // {
+            //     name: "Matt Parkin",
+            //     type: "rep type",
+            //     calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21260138&calendarID=4743440"
+            // },
+            // {
+            //     name: "Jane McDonald",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Rishwanth Sunkara",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Trent Hambleton",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
         ]
     },
     {
@@ -83,31 +85,32 @@ const colleges = [{
         country: 'Canada',
         desc: '',
         imgPath: York,
-        reps: [{
-                name: "Aarushi",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Althea Reyes",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Rabia Toqeer",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Saksham Sethi",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Yashvi Chheda",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
+        reps: [
+            // {
+            //     name: "Aarushi",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Althea Reyes",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Rabia Toqeer",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Saksham Sethi",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Yashvi Chheda",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
         ]
     },
     {
@@ -117,21 +120,21 @@ const colleges = [{
         desc: '',
         imgPath: Schulic,
         reps: [
-            {
-                name: "Aakanksha Bhat",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Ava Tamizifar",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Rosella Cioffi",
-                type: "rep type",
-                calendarLink: "some uri"
-            }
+            // {
+            //     name: "Aakanksha Bhat",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Ava Tamizifar",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Rosella Cioffi",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // }
         ]
     },
     {
@@ -140,31 +143,32 @@ const colleges = [{
         country: 'Canada',
         desc: '',
         imgPath: Toronto,
-        reps: [{
-                name: "Brian Lee",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Caroline Cachero",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Daniel Wong",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Matthew Choi",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
+        reps: [
             {
                 name: "Yuvna Jayant",
-                type: "rep type",
-                calendarLink: "some uri"
+                type: "Academic Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4786438"
             },
+            // {
+            //     name: "Brian Lee",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Caroline Cachero",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Daniel Wong",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Matthew Choi",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // }
         ],
         
     },
@@ -174,31 +178,27 @@ const colleges = [{
         country: 'Canada',
         desc: '',
         imgPath: Ryerson,
-        reps: [{
-                name: "Brian Lee",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Caroline Cachero",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Daniel Wong",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Matthew Choi",
-                type: "rep type",
-                calendarLink: "some uri"
-            },
-            {
-                name: "Yuvna Jayant",
-                type: "Academic Representative",
-                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4786438"
-            },
+        reps: [
+            // {
+            //     name: "Brian Lee",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Caroline Cachero",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Daniel Wong",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
+            // {
+            //     name: "Matthew Choi",
+            //     type: "rep type",
+            //     calendarLink: "some uri"
+            // },
             {
                 name: "Elaine Wang",
                 type: "Academic/ResLife Rep",
