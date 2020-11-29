@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../components/nav';
 import CollegeList from '../components/collegeList';
+import Footer from '../components/footer';
 
 const Dashboard = (props) => {
     const name = props.match.params.name;
@@ -9,6 +10,7 @@ const Dashboard = (props) => {
         <>
         <Nav login={true} name={dashboardName}/>
         <CollegeList {...props} />
+        <Footer />
         </>
     )
 

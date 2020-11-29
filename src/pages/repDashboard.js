@@ -3,6 +3,7 @@ import {Box} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 import Nav from '../components/nav';
 import RepView from '../components/repView';
+import Footer from '../components/footer';
 
 // import RepDash from ''
 
@@ -20,6 +21,7 @@ const RepDash = (props) => {
         <Box className={classes.root}>
             <Nav login={true} name={localStorage.getItem('username')}/>
             <RepView {...props} />
+            <Footer />
         </Box>
     )
 };

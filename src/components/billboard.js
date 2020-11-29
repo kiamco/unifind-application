@@ -14,6 +14,8 @@ const useStyles = makeStyles({
         alignItems: "flex-end",
         justifyContent: 'left',
         background: `url(${boardBg})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover, contain',
         opacity: '0.8',
 
     },
