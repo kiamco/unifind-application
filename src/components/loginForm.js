@@ -187,9 +187,9 @@ const SignInForm = (props) => {
             </Button>
               <Grid container>
                 <Grid item xs className={classes.forgotPass}>
-                  <Link href="#" variant="body2">
+                  {/* <Link href="#" variant="body2">
                     Forgot password?
-                </Link>
+                </Link> */}
                 </Grid>
                 <Grid item>
 
