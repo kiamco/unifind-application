@@ -19,7 +19,7 @@ const useStyles = makeStyles( theme => ({
         gridTemplateRows:'300px 300px 300px 300px 300px',
         margin:'0 50px',
         [theme.breakpoints.down('lg')]:{
-            gridTemplateColumns:'300px 300px 300px ',
+            gridTemplateColumns:'300px 300px 300px 300px',
             gridTemplateRows:'300px 300px 300px ', 
         },
         [theme.breakpoints.down('md')]:{

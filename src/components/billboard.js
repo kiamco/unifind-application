@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     },
     message: {
         margin: '50px 110px',
-        width: '400px',
+        maxwidth: '400px',
         display: 'flex',
         flexFlow: 'column',
         alignItems: 'baseline'
@@ -36,7 +36,8 @@ const useStyles = makeStyles({
     },
     mainHeader: {
         fontWeight: 'bolder',
-        fontFamily: regFont
+        fontFamily: regFont,
+        margin:'50px 0 20px'
     },
     mainMesg: {
         fontFamily: regFont,
@@ -61,12 +62,11 @@ const Billboard = () => {
         <Box className={classes.root}>
             <Box className={classes.left}>
                 <Box className={classes.message}>
-                    <Typography className={classes.mainHeader} variant='h3'>Plan Your Future.</Typography>
-                    <Typography className={classes.mainMesg} variant='body'>Where Do You See Yourself Studying In 2 Years?</Typography>
+                    <Typography className={classes.mainHeader} variant='h4'>Where Do You See Yourself Studying In 2 Years?</Typography>
                     <Typography>
-                        Experience virtual university life with current &amp; top university students.
-                        Receive personalized application help from students studying in your dream program.
-                        Connect with a current university student to get a scoop on the good and the bad of that university.
+                        Experience virtual university life with current &amp; top university students.<br/>
+                        Receive personalized application help from students studying in your dream program.<br/>
+                        Connect with a current university student to get a scoop on the good and the bad of that university.<br/>
                         Financial concerns? Social life or academic life worry? We’re all going through it. Let us tell you the scary truth.
                     </Typography>
 
