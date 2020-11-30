@@ -14,8 +14,8 @@
   - [x] 24 hours before meeting a zoom link will be sent to the user with meeting specifications
   
   #### Stretch Goals
-  - [ ] Sign up
-  - [ ] User Dashboard
+  - [x] Sign up
+  - [x] User Dashboard
   - [x] Login
   - [ ] Password reset
 
