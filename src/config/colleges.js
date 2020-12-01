@@ -6,7 +6,7 @@ import Toronto from '../assets/img/collegeBanners/toronto-uni.jpg';
 import Ryerson from '../assets/img/collegeBanners/reyrson-uni.jpg';
 
 const colleges = [{
-        college: 'Willfrid Laurier University',
+        college: 'Wilfred Laurier University',
         city: 'Waterloo',
         country: 'Canada',
         desc: '',
@@ -142,7 +142,7 @@ const colleges = [{
         city: 'Toronto',
         country: 'Canada',
         desc: '',
-        imgPath: Toronto,
+        imgPath: Ryerson,
         reps: [
             {
                 name: "Yuvna Jayant",
@@ -177,7 +177,7 @@ const colleges = [{
         city: 'Toronto',
         country: 'Canada',
         desc: '',
-        imgPath: Ryerson,
+        imgPath: Toronto,
         reps: [
             // {
             //     name: "Brian Lee",
