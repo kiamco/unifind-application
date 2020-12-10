@@ -27,11 +27,11 @@ const colleges = [{
             //     type: "rep type",
             //     calendarLink: "some uri"
             // },
-            // {
-            //     name: "Sydney Doyle",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
+            {
+                name: "Sydney Doyle",
+                type: "Social Life Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4831625"
+            },
             // {
             //     name: "Talia Pitt",
             //     type: "rep type",
@@ -57,11 +57,11 @@ const colleges = [{
             //     type: "rep p type",
             //     calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21260138&calendarID=4743434"
             // },
-            // {
-            //     name: "Matt Parkin",
-            //     type: "rep type",
-            //     calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21260138&calendarID=4743440"
-            // },
+            {
+                name: "Matt Parkin",
+                type: "Academic/ResLife Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4832193"
+            },
             // {
             //     name: "Jane McDonald",
             //     type: "rep type",
@@ -120,6 +120,11 @@ const colleges = [{
         desc: '',
         imgPath: Schulic,
         reps: [
+            {
+                name: "Nina Gasbarre",
+                type: "President",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4831566"
+            },
             // {
             //     name: "Aakanksha Bhat",
             //     type: "rep type",
@@ -154,16 +159,16 @@ const colleges = [{
             //     type: "rep type",
             //     calendarLink: "some uri"
             // },
-            // {
-            //     name: "Caroline Cachero",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
-            // {
-            //     name: "Daniel Wong",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
+            {
+                name: "Caroline Cachero",
+                type: "Academic/ResLife Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4811773"
+            },
+            {
+                name: "Daniel Wong",
+                type: "Academic Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4831536"
+            },
             // {
             //     name: "Matthew Choi",
             //     type: "rep type",
