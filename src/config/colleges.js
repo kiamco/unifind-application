@@ -125,11 +125,16 @@ const colleges = [{
                 type: "President",
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4831566"
             },
-            // {
-            //     name: "Aakanksha Bhat",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
+            {
+                name: "Sarrah Chakera",
+                type: "Accounting Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4831798"
+            },
+            {
+                name: "Maya Pallotta",
+                type: "Academic Representitive",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4839388"
+            },
             // {
             //     name: "Ava Tamizifar",
             //     type: "rep type",
