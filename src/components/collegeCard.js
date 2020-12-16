@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 import {regFont} from './themes/color';
-import { minHeight } from '@material-ui/system';
 
 const useStyles = makeStyles({
     root: {

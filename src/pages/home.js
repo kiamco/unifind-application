@@ -5,6 +5,7 @@ import Billboard from '../components/billboard';
 import Options from '../components/options';
 import CollegeList from '../components/collegeList';
 import Footer from '../components/footer';
+import Header from '../components/headers';
 
 const Home = (props) => {
     return (
