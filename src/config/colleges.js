@@ -135,6 +135,11 @@ const colleges = [{
                 type: "Academic Representitive",
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4839388"
             },
+            {
+                name: "Mateo Cavallo",
+                type:" Academic Representative",
+                calendarLink:"https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841769"
+            }
             // {
             //     name: "Ava Tamizifar",
             //     type: "rep type",
@@ -159,11 +164,6 @@ const colleges = [{
                 type: "Academic Representative",
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4786438"
             },
-            // {
-            //     name: "Brian Lee",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
             {
                 name: "Caroline Cachero",
                 type: "Academic/ResLife Representative",
@@ -209,6 +209,11 @@ const colleges = [{
             //     type: "rep type",
             //     calendarLink: "some uri"
             // },
+            {
+                name: "Chelsea Young",
+                type: "Co-President",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841800"
+            },
             {
                 name: "Elaine Wang",
                 type: "Academic/ResLife Rep",
