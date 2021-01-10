@@ -17,7 +17,7 @@
   - [x] Sign up
   - [x] User Dashboard
   - [x] Login
-  - [ ] Password reset
+  - [x] Password reset
 
 
 
