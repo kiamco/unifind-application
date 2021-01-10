@@ -34,15 +34,13 @@ const useStyles = makeStyles( theme => ({
             gridTemplateRows:'300px ', 
         }
     },
-    header: {
-        maxWidth:"80%",
-        margin:"10px auto"
-    }
+
 }));
 
 const CollegeList = (props) => {
 
     const classes = useStyles();
+
     return(
         <Box className={classes.root}>
             <Headers className={classes.header} content="Universities" />
