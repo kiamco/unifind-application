@@ -96,11 +96,11 @@ const colleges = [{
             //     type: "rep type",
             //     calendarLink: "some uri"
             // },
-            // {
-            //     name: "Rabia Toqeer",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
+            {
+                name: "Rabia Toqeer",
+                type: "Academic Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841930"
+            },
             // {
             //     name: "Saksham Sethi",
             //     type: "rep type",
