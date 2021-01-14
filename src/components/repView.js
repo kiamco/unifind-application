@@ -70,7 +70,13 @@ const RepView = (props) => {
     
     const onClickHandler = (e, obj) => {
         e.preventDefault();
-        window.open(obj);
+        if (localStorage.getItem('token')) {
+            window.open(obj);
+        } else {
+            props.history.push('/login')
+        }
+
+        
     };
 
     return (

@@ -12,36 +12,36 @@ const colleges = [{
         desc: '',
         imgPath: Laurier,
         reps: [
-            // {
-            //     name: "Andrew Pohner",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
-            // {
-            //     name: "Cameron Michaels",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
-            // {
-            //     name: "Dara Heravi",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
+            {
+                name: "Andrew Pohner",
+                type: "Co-President",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841725"
+            },
+            {
+                name: "Cameron Michaels",
+                type: "Admissions Resource Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841732"
+            },
+            {
+                name: "Dara Heravi",
+                type: "Academic Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841707"
+            },
             {
                 name: "Sydney Doyle",
                 type: "Social Life Representative",
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4831625"
             },
-            // {
-            //     name: "Talia Pitt",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
-            // {
-            //     name: "Veronica Magolon",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
+            {
+                name: "Talia Pitt",
+                type: "Academic Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841719"
+            },
+            {
+                name: "Veronica Magolon",
+                type: "Co-President",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841668"
+            },
 
         ]
     },
@@ -52,31 +52,36 @@ const colleges = [{
         desc: '',
         imgPath: Western,
         reps: [
-            // {
-            //     name: "Adam Dilouya",
-            //     type: "rep p type",
-            //     calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21260138&calendarID=4743434"
-            // },
+            {
+                name: "Adam Dilouya",
+                type: "Academic Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4831488"
+            },
             {
                 name: "Matt Parkin",
                 type: "Academic/ResLife Representative",
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4832193"
             },
-            // {
-            //     name: "Jane McDonald",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
-            // {
-            //     name: "Rishwanth Sunkara",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
-            // {
-            //     name: "Trent Hambleton",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
+            {
+                name: "Jane McDonald",
+                type: "Academic Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841831"
+            },
+            {
+                name: "Rishwanth Sunkara",
+                type: "Academic/ResLife Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841824"
+            },
+            {
+                name: "Trent Hambleton",
+                type: "Academic/Socialite Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841837"
+            },
+            {
+                name: "Shelby Deacon",
+                type: "Academic/ResLife Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841834"
+            },
         ]
     },
     {
@@ -101,11 +106,7 @@ const colleges = [{
                 type: "Academic Representative",
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841930"
             },
-            // {
-            //     name: "Saksham Sethi",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
+            
             // {
             //     name: "Yashvi Chheda",
             //     type: "rep type",
@@ -139,17 +140,22 @@ const colleges = [{
                 name: "Mateo Cavallo",
                 type:" Academic Representative",
                 calendarLink:"https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841769"
+            },
+            {
+                name: "Ava Tamizifar",
+                type: "Marketing Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841754"
+            },
+            {
+                name: "Rosella Cioffi",
+                type: "Community Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841763"
+            },
+            {
+                name: "Chris De Castro",
+                type: "Athletic/Finance Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841777"
             }
-            // {
-            //     name: "Ava Tamizifar",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
-            // {
-            //     name: "Rosella Cioffi",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // }
         ]
     },
     {
@@ -174,11 +180,16 @@ const colleges = [{
                 type: "Academic Representative",
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4831536"
             },
-            // {
-            //     name: "Matthew Choi",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // }
+            {
+                name: "Matthew Choi",
+                type: "Academic Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841743"
+            },
+            {
+                name: "Yahli Ozery",
+                type: "Academic Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841750"
+            },
         ],
         
     },
@@ -189,26 +200,11 @@ const colleges = [{
         desc: '',
         imgPath: Toronto,
         reps: [
-            // {
-            //     name: "Brian Lee",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
-            // {
-            //     name: "Caroline Cachero",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
-            // {
-            //     name: "Daniel Wong",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
-            // {
-            //     name: "Matthew Choi",
-            //     type: "rep type",
-            //     calendarLink: "some uri"
-            // },
+            {
+                name: "Joshua Chua",
+                type: "Co-President",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841803"
+            },
             {
                 name: "Chelsea Young",
                 type: "Co-President",
@@ -223,7 +219,20 @@ const colleges = [{
                 name: "Craig Deng",
                 type:"International Relations Rep",
                 calendarLink:"https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4776103"
-            }
+            },
+            {
+                name: "Andrea Javellana ",
+                type: "Academic Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841818",
+                profilePicture: ""
+            },
+            {
+                name: "Erin Ng",
+                type: "Academic/Atletic Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841794",
+                profilePicture: ""
+            },
+            
         ]
     }
 ];
