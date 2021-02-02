@@ -6,20 +6,22 @@ import { shadows } from '@material-ui/system';
 import { regFont, mainBlue, shaded } from './themes/color';
 import CollegeData from '../config/colleges';
 import { secondaryBtn } from './themes/components';
-import transitions from '@material-ui/core/styles/transitions';
-
 
 const useStyles = makeStyles({
     root: {
         margin: '50px 200px',
-        height: '100vh'
+        height: '100%',
+        display: 'flex',
+        flexFlow: 'column',
+        alignItems: 'center'
     },
     repWrapper: {
         maxWidth: '600px',
-        margin: '20px auto',
+        margin: '20px 0',
         transition: '500ms',
         '&:hover': {
-            background: shaded
+            background: shaded,
+            cursor:'pointer'
         }
     },
     repContainer: {
@@ -56,6 +58,12 @@ const useStyles = makeStyles({
     },
     availabilityBtn: {
         ...secondaryBtn
+    },
+    details:{
+        minWidth:'600px',
+        ['@media (min-width:800px)']: { 
+            width: '400px'
+        }
     }
 })
 
@@ -93,13 +101,14 @@ const RepView = (props) => {
                 college.reps.map((el,i) => {
                     // console.log("panel" + i)
                     return (
-                        <Accordion 
+                        <Accordion className={classes.repWrapper}
                         key={el.name} 
                         expanded={expanded === "panel" + i} 
                         onClick={accordionChange("panel" + i, expanded)} >
                             <Box className={classes.repContainer}>
                                 <Box className={classes.repInfo}>
-                                    <Avatar>{el.name.split('')[0]}</Avatar>
+                                {el.pic ? <Avatar alt={el.name} src={el.pic}/> : <Avatar>{el.name.split('')[0]}</Avatar>}
+                                    
                                     <Typography className={classes.infoWrapper} variant='body1'>{el.name}
                                         <br />
                                         <Typography className={classes.subheader} variant='subtitle2'>{el.type}</Typography>
@@ -107,7 +116,7 @@ const RepView = (props) => {
                                 </Box>
                                 <Button className={classes.availabilityBtn} onClick={(e) => onClickHandler(e, el.calendarLink)}>Check Availabilty</Button>
                             </Box>
-                            <AccordionDetails>
+                            <AccordionDetails style={{minWidth:'600px'}}>
                                 <Typography>
                                     {el.bio}
                                     </Typography>

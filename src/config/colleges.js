@@ -4,6 +4,11 @@ import York from '../assets/img/collegeBanners/york-uni.png';
 import Schulic from '../assets/img/collegeBanners/schulic-uni.jpeg';
 import Toronto from '../assets/img/collegeBanners/toronto-uni.jpg';
 import Ryerson from '../assets/img/collegeBanners/reyrson-uni.jpg';
+import Shelby from '../assets/img/reps/shelby.jpg';
+import Andrea from '../assets/img/reps/andrea.jpg';
+import Caroline from '../assets/img/reps/caroline.jpg';
+import Elaine from '../assets/img/reps/elaine.jpg';
+import Erin from '../assets/img/reps/erin.jpg';
 
 const colleges = [{
         college: 'Wilfred Laurier University',
@@ -92,6 +97,7 @@ const colleges = [{
                 name: "Shelby Deacon",
                 type: "Academic/ResLife Representative",
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841834",
+                pic:Shelby,
                 bio: "I am in my third year of the HS with Bio module. I am equipped to answer questions directly relating to any programs under the school of health studies (HS, Kin, or Nursing) as well as majors under the science/med sci area. Because I am doing the HS with Bio module, I’ve taken the same courses as students in Med Sci/Science. I also lived in residence in first year, and then was a residence Soph so I am able to provide lots of help in terms of residence life."
             },
         ]
@@ -192,6 +198,7 @@ const colleges = [{
             {
                 name: "Caroline Cachero",
                 type: "Academic/ResLife Representative",
+                pic: Caroline,
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4811773"
             },
             {
@@ -236,6 +243,7 @@ const colleges = [{
             {
                 name: "Elaine Wang",
                 type: "Academic/ResLife Rep",
+                pic:Elaine,
                 calendarLink:"https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4776097"
             },
             {
@@ -247,14 +255,14 @@ const colleges = [{
                 name: "Andrea Javellana ",
                 type: "Academic Representative",
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841818",
-                profilePicture: "",
+                pic: Andrea,
                 bio:"Andrea is a third-year student well equipped to discuss academic questions to prospective students interested in Statistics or Ecology and Evolutionary Biology. She has taken a variety of courses in mathematics, biodiversity conservation, biology, and statistics. She has experienced living on campus for first-year, transitioned to commuting 2+ hours a day in second-year, navigated learning strategies offered at the university, has changed majors, and participated in college intramurals. Please reach out to Andrea if you are interested in learning more about attending the University of Toronto."
             },
             {
                 name: "Erin Ng",
                 type: "Academic/Atletic Representative",
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841794",
-                profilePicture: "",
+                pic: Erin,
                 bio:"Erin is a second year student in the Engineering Program at the University of Toronto. Though she is majoring in Chemical Engineering, Erin is capable of answering questions related to all the different engineering disciplines available to incoming students.  School aside, she finds time to balance commuting with being a Varsity Athlete. She is happy to discuss varsity sports and resources available to athletes to help them excel in both school and sport. "
             },
             
