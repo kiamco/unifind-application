@@ -11,7 +11,7 @@ import Elaine from '../assets/img/reps/elaine.jpg';
 import Erin from '../assets/img/reps/erin.jpg';
 import Adam from '../assets/img/reps/adam.jpeg';
 import Matt from '../assets/img/reps/matt.jpeg';
-import Aankanksha from  '../assets/img/reps/aakanksha.jpeg';
+import Aankanksha from  '../assets/img/reps/aankanksha.jpeg';
 import Andrew from  '../assets/img/reps/andrew.jpeg';
 import Ava from  '../assets/img/reps/ava.jpeg';
 import Ayaan from  '../assets/img/reps/ayaan.jpeg';
