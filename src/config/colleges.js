@@ -9,6 +9,9 @@ import Andrea from '../assets/img/reps/andrea.jpg';
 import Caroline from '../assets/img/reps/caroline.jpg';
 import Elaine from '../assets/img/reps/elaine.jpg';
 import Erin from '../assets/img/reps/erin.jpg';
+import Adam from '../assets/img/reps/adam.jpe   g';
+import Matt from '../assets/img/reps/matt.jpeg';
+
 
 const colleges = [{
         college: 'Wilfred Laurier University',
@@ -67,11 +70,13 @@ const colleges = [{
                 name: "Adam Dilouya",
                 type: "Academic Representative",
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4831488",
+                pic: Adam,
                 bio:"Adam is a 3rd year business student at the Ivey School of Business. During his first two years at Western, he was enrolled in the Management and Organizational Studies program, focusing on consumer behaviour. Apart from classes, Adam was involved on campus through his experience as a Social Science Orientation Leader, where he would help first-year students transition to university life. He’s worked as an outreach coordinator for a Toronto-based mental health organization and a fundraiser for the SickKids Hospital. In his free time, Adam likes to read, explore new places, and produce music! He would be glad to talk about academics, supplementary applications, and life on campus!"
             },
             {
                 name: "Matt Parkin",
                 type: "Academic/ResLife Representative",
+                pic: Matt,
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4832193",
                 bio:"Matt is a third year business student at the Ivey Business School at Western University, having completed his first two years of study in the Economics program at Western. He has been involved with many clubs and councils on campus and was a residence orientation leader at Delaware Hall. He founded LEAP Canada, a non-profit that helps students transition to post-secondary education, and Parkin Consulting Ltd., an organization that provides virtual consulting services to clients around the world. Matt enjoys officiating hockey and baseball, playing spikeball, and reading personal development books! Matt is happy to chat about Ivey AEO/HBA, Economics, residence life, orientation, campus life, extracurricular opportunities, time management, internship recruiting, LinkedIn and networking."
             },
@@ -180,6 +185,12 @@ const colleges = [{
                 type: "Athletic/Finance Representative",
                 calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841777",
                 bio:"Hi everyone, my name is Chris and I enjoy playing all sports but mostly hockey, a big computer geek and I'm looking forward to getting to know all of you!"
+            },
+            {
+                name: "Alessia Paniccia",
+                type: "Marketing Representative",
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4841780",
+                bio:"Hello everyone! My name is Alessia and I am a third year BBA student at Schulich specializing in Marketing & OMIS, and I am also one of the Marketing Specialists for UniFind Schulich. Feel free to book a call with me if you want to learn more about the marketing specialization and its respective courses at Schulich, alongside the marketing related clubs and resources that Schulich offers which will help you land an internship!"
             }
         ]
     },
