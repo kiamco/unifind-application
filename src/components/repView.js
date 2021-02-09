@@ -108,7 +108,6 @@ const RepView = (props) => {
                             <Box className={classes.repContainer}>
                                 <Box className={classes.repInfo}>
                                 {el.pic ? <Avatar alt={el.name} src={el.pic}/> : <Avatar>{el.name.split('')[0]}</Avatar>}
-                                    
                                     <Typography className={classes.infoWrapper} variant='body1'>{el.name}
                                         <br />
                                         <Typography className={classes.subheader} variant='subtitle2'>{el.type}</Typography>
