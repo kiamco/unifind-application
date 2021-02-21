@@ -7,11 +7,11 @@ import BillboardWave from '../assets/img/billboard_wave.png';
 const useStyles = makeStyles({
     root:{
         height:"100vh",
-        background:`no-repeat url(${BillboardWave}) left/60%`,
+        background:`no-repeat url(${BillboardWave}) left/50%`,
         backgroundPositionY:'top'
     },
     wave:{
-        minWidth:"60%",
+        minWidth:"50%",
         height:"90vh"
     }
 });

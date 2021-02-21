@@ -8,3 +8,4 @@ export const shaded = "#E0E0E0"
 
 export const fontLogo = "'Oleo Script', cursive;";
 export const regFont = "'Open Sans', sans-serif;";
+export const secondaryFont = "'Roboto', sans-serif;"
