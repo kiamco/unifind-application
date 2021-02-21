@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Box,Typography} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles'
 import BillboardWrapper from '../components/billboardWrapper';
 import BillboardImg from '../assets/img/student_service_img.png'
 import {secondaryFont, mainBlue} from '../components/themes/color';
+import Colleges from '../config/colleges';
 
 const useStyles = makeStyles({
    billboardConent:{
@@ -47,6 +48,8 @@ const useStyles = makeStyles({
 const StudentServices = (props) => {
     
     const classes = useStyles();
+    const universityList = [Colleges.map(el => el.college)]
+    const [uni, setUni]  = useState(universityList[0]);
                  
     return (
         <Box>
