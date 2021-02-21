@@ -5,6 +5,7 @@ import BillboardWrapper from '../components/billboardWrapper';
 import BillboardImg from '../assets/img/student_service_img.png'
 import {secondaryFont, mainBlue} from '../components/themes/color';
 import Colleges from '../config/colleges';
+import Filter from '../components/uniFilter';
 
 const useStyles = makeStyles({
    billboardConent:{
@@ -48,9 +49,9 @@ const useStyles = makeStyles({
 const StudentServices = (props) => {
     
     const classes = useStyles();
-    const universityList = [Colleges.map(el => el.college)]
+    const universityList = Colleges.map(el => el.college)
     const [uni, setUni]  = useState(universityList[0]);
-                 
+    
     return (
         <Box>
             <BillboardWrapper {...props}>
@@ -64,6 +65,9 @@ const StudentServices = (props) => {
                         <Typography variant='p' className={classes.boardDescription}> Learn about Canadian universities and their programs, get supplimentary application help from students who have already been accepted to your dream program/university, and get the support you need before attending the university!</Typography>
                     </Box>
                 </Box>
+                <Filter unis={universityList} uni={uni} setUni={setUni}>
+                        
+                </Filter>
             </BillboardWrapper>
             
             {/* billboard */}
