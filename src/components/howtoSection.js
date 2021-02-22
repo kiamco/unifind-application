@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { mainBlue, secFont, tertFont, mainWhite } from './themes/color';
-import experienceImg from '../assets/img/experience.svg'
 import whiteboardImg from '../assets/img/whiteboard.svg'
 import connectionsImg from '../assets/img/connections.svg'
 import calendarImg from '../assets/img/calendar.svg'

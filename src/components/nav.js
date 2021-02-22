@@ -3,7 +3,7 @@ import { AppBar, Typography, Toolbar, Button, Box, Menu, MenuItem, IconButton } 
 import { makeStyles } from '@material-ui/core/styles';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { Link } from 'react-router-dom';
-import { primaryBgColor, mainBlue, mainRed, mainWhite, fontLogo } from './themes/color';
+import { mainWhite, fontLogo } from './themes/color';
 import { primaryBtn, redButton } from './themes/components';
 import bgImage from "../assets/img/bg.svg"
 const useStyles = makeStyles({
@@ -13,7 +13,6 @@ const useStyles = makeStyles({
     nav: {
         minHeight: "60px",
         maxHeight: "60px",
-        // background: "linear-gradient(90deg, rgba(58,123,184,1) 50%, rgba(255,255,255,1) 50%);",
         background: `url(${bgImage})`,
         backgroundSize: "50%",
         backgroundRepeat: "no-repeat",
@@ -59,12 +58,9 @@ const useStyles = makeStyles({
         flexFlow: "row wrap",
         justifyContent: "space-between"
     }
-
-
 });
 
 const Nav = ({ login, name, ...props }) => {
-
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = useState(null);
 
@@ -140,7 +136,6 @@ const Nav = ({ login, name, ...props }) => {
                                 ''
                         }
                     </Box>
-
                 </Toolbar>
             </AppBar>
         </nav>
