@@ -1,43 +1,61 @@
 import React from 'react';
 import { Box, Typography, Button, Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import boardBg from '../assets/img/mainBg.png';
-import cover from '../assets/img/union.png';
-import { regFont } from './themes/color';
-import { secondaryBtn } from './themes/components';
+import { mainBlue, regFont, secFont } from './themes/color';
+import { redButton } from './themes/components';
 import { Link } from 'react-router-dom';
-
+import bgImage2 from "../assets/img/bg.svg";
+import billboardImg from "../assets/img/billboardImg.svg";
 const useStyles = makeStyles({
     root: {
         display: 'flex',
         flexDirection: 'row',
-        alignItems: "flex-end",
-        justifyContent: 'left',
-        background: `url(${boardBg})`,
+        alignItems: "center",
+        justifyContent: 'center',
+        backgroundImage: `url(${bgImage2})`,
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover, contain',
-        opacity: '0.8',
+        backgroundSize: "50%",
+        backgroundPositionY: "-60px",
+        height: "750px",
 
     },
     left: {
-        background: `url(${cover})`,
-        minHeight: '45vh',
-        minWidth: '60vw',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
+        width: "50%",
+        display: "flex",
+        justifyContent: "center",
+        marginTop: "-50px"
+    },
+    right: {
+        marginTop: "-50px"
     },
     message: {
-        margin: '50px 110px',
+        margin: '50px 50px',
         maxwidth: '400px',
         display: 'flex',
         flexFlow: 'column',
         alignItems: 'baseline'
 
     },
+    btnContainer: {
+        width: '100%',
+        display: 'flex',
+        flexFlow: 'row',
+        justifyContent: "center"
+    },
     mainHeader: {
+        color: `${mainBlue}`,
         fontWeight: 'bolder',
         fontFamily: regFont,
-        margin:'50px 0 20px'
+        margin:'50px 0 20px',
+        textTransform: "capitalize",
+        maxWidth: '475px'
+    },
+    mainText: {
+        fontFamily: `${secFont}`,
+        fontSize: '1.2rem',
+        maxWidth: '350px'
     },
     mainMesg: {
         fontFamily: regFont,
@@ -46,10 +64,18 @@ const useStyles = makeStyles({
         margin: '10px auto'
     },
     createBtn: {
-        ...secondaryBtn,
-        fontWeight: 'bold',
+        ...redButton,
         border: 'solid 3px',
-        height: '50px'
+        height: '50px',
+        width: '250px',
+        fontSize: '20px',
+        marginLeft: '0',
+        marginTop: '1em'
+    },
+    mainImg: {
+        maxWidth: "45em",
+        minWidth: "30em",
+        marginLeft: "100px"
     }
 });
 
@@ -61,22 +87,21 @@ const Billboard = () => {
     return (
         <Box className={classes.root}>
             <Box className={classes.left}>
-                <Box className={classes.message}>
-                    <Typography className={classes.mainHeader} variant='h4'>Where Do You See Yourself Studying In 2 Years?</Typography>
-                    <Typography>
-                        Experience virtual university life with current &amp; top university students.<br/>
-                        Receive personalized application help from students studying in your dream program.<br/>
-                        Connect with a current university student to get a scoop on the good and the bad of that university.<br/>
-                        Financial concerns? Social life or academic life worry? We’re all going through it. Let us tell you the scary truth.
-                    </Typography>
-
-                    <Link style={{ textDecoration: 'none',marginTop:'10px' }} to='/signUp'>
-                        <Button className={classes.createBtn}>Create an Account</Button>
-                    </Link>
-                </Box>
-
+                <img className={classes.mainImg} src={billboardImg} alt="computer animation"/>
             </Box>
-
+            <Box className={classes.right}>
+                <Box className={classes.message}>
+                    <Typography className={classes.mainHeader} variant='h4'>We're on a mission to help you with your transition to a canadian university!</Typography>
+                    <Typography className={classes.mainText}>
+                        Jump on a 1-on-1 call with a current university student of your choice.
+                    </Typography>
+                    <Box className={classes.btnContainer}>
+                        <Link style={{ textDecoration: 'none',marginTop:'10px' }} to='/signUp'>
+                            <Button className={classes.createBtn}>Book a Call Now!</Button>
+                        </Link>
+                    </Box>
+                </Box>
+            </Box>
         </Box>
     )
 }

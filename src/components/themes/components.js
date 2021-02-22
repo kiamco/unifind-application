@@ -1,21 +1,49 @@
-import {btnColor, secondaryBlue} from './color';
+import {mainRed, mainRedTint, mainWhite, btnColor, secondaryBlue, transition, regFont, tert} from './color';
 
 export const primaryBtn =  {
-        background: "white",
-        color: btnColor,
-        border: `solid 2px ${btnColor}`,
-        '&:hover': {
-            background: btnColor,
-            color: 'white'
-        }
+    fontFamily: `${regFont}`,
+    fontWeight: "400",
+    fontSize: "16px",
+    width: "7em",
+    color: `${mainRed}`,
+    textTransform: 'capitalize',
+    background: `${mainWhite}`,
+    borderRadius: "17px",
+    padding: "5px 15px",
+    borderColor: "transparent",
+    marginLeft: "1em",
+    transition: `${transition}`,
+    '&:hover': {
+            background: 'white',
+            color: `${mainRed}`,
+            borderColor: `${mainRed}`,
+    },
 }
 
 export const secondaryBtn =  {
-    background: "white",
+    background: `${mainWhite}`,
     color: secondaryBlue,
     border: `solid 2px ${secondaryBlue}`,
     '&:hover': {
         background: secondaryBlue,
-        color: 'white'
+        color: `${mainWhite}`
     }
+}
+
+export const redButton = {
+    fontWeight: "500",
+    fontSize: "16px",
+    width: "7em",
+    color: `${mainWhite}`,
+    textTransform: 'capitalize',
+    background: `${mainRed}`,
+    borderRadius: "17px",
+    padding: "5px 15px",
+    borderColor: "transparent",
+    marginLeft: "1em",
+    transition: `${transition}`,
+    '&:hover': {
+            background: `${mainRedTint}`,
+            borderColor: `${mainRedTint}`,
+    },
 }
