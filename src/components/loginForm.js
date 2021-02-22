@@ -145,7 +145,6 @@ const SignInForm = (props) => {
           <img classeName={classes.wave} style={{maxWidth:"100%",maxHeight:"100%"}} src={Wave}></img>
           </Box>
         </Grid>
-        
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <div className={classes.paper}>
             <Avatar className={classes.avatar}>

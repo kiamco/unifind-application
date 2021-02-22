@@ -3,31 +3,41 @@ import { AppBar, Typography, Toolbar, Button, Box, Menu, MenuItem, IconButton } 
 import { makeStyles } from '@material-ui/core/styles';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { Link } from 'react-router-dom';
-import { primaryBgColor, mainBlue, mainRed, fontLogo } from './themes/color';
-import { primaryBtn } from './themes/components';
-
+import { mainWhite, fontLogo } from './themes/color';
+import { primaryBtn, redButton } from './themes/components';
+import bgImage from "../assets/img/bg.svg"
 const useStyles = makeStyles({
     root: {
-        width: "100%"
+        width: "100%",
     },
     nav: {
-        minHeight: "50px",
-        background: primaryBgColor
+        minHeight: "60px",
+        maxHeight: "60px",
+        background: `url(${bgImage})`,
+        backgroundSize: "50%",
+        backgroundRepeat: "no-repeat",
+        boxShadow: "none"
+
     },
     logo: {
         fontFamily: `${fontLogo}`,
         display: 'flex'
     },
     leftLogo: {
-        color: `${mainBlue}`,
-        fontFamily: fontLogo
+        color: `${mainWhite}`,
+        fontFamily: fontLogo,
+        fontSize: "42px"
     },
     rightLogo: {
-        color: `${mainRed}`,
-        fontFamily: fontLogo
+        color: `${mainWhite}`,
+        fontFamily: fontLogo,
+        fontSize: "42px"
     },
     toolbarButton: {
         ...primaryBtn
+    },
+    toolbarButtonFilled: {
+        ...redButton
     },
     toolbarIcon: {
         marginRight: '10px',
@@ -36,18 +46,21 @@ const useStyles = makeStyles({
     rightToolbar: {
         display: 'flex',
         flexFlow: "row wrap",
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
     },
     options: {
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
+        
+    },
+    rightBox: {
+        display: "flex",
+        flexFlow: "row wrap",
+        justifyContent: "space-between"
     }
-
-
 });
 
 const Nav = ({ login, name, ...props }) => {
-
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = useState(null);
 
@@ -84,15 +97,24 @@ const Nav = ({ login, name, ...props }) => {
                     <Link style={{ textDecoration: 'none' }} to={linkHandler()}>
                         <Box className={classes.logo}>
                             <Typography variant="h4" className={classes.leftLogo}>Uni</Typography>
-                            <Typography variant="h4" className={classes.rightLogo}>find</Typography>
+                            <Typography variant="h4" className={classes.rightLogo}>Find</Typography>
                         </Box>
                     </Link>
-                    <Box >
+                    <Box className={classes.rightBox}>
 
                         {!login ?
                             <>
                                 <Link style={{ textDecoration: 'none' }} to='/login'>
-                                    <Button size="large" variant='outlined' className={classes.toolbarButton}>Login</Button>
+                                    <Button size="large" variant='outlined' className={classes.toolbarButton}>Services</Button>
+                                </Link>
+                                <Link style={{ textDecoration: 'none' }} to='/login'>
+                                    <Button size="large" variant='outlined' className={classes.toolbarButton}>Our Story</Button>
+                                </Link>
+                                <Link style={{ textDecoration: 'none' }} to='/login'>
+                                    <Button size="large" variant='outlined' className={classes.toolbarButton}>FAQ</Button>
+                                </Link>
+                                <Link style={{ textDecoration: 'none' }} to='/login'>
+                                    <Button size="large" variant='outlined' className={classes.toolbarButtonFilled}>Login</Button>
                                 </Link>
                             </> :
                             name ?
@@ -114,7 +136,6 @@ const Nav = ({ login, name, ...props }) => {
                                 ''
                         }
                     </Box>
-
                 </Toolbar>
             </AppBar>
         </nav>
