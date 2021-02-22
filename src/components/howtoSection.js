@@ -25,24 +25,6 @@ const useStyles = makeStyles({
         textTransform: 'capitalize',
         marginTop: '40px'
     },
-    cardContainer: {
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        
-    },
-    cardBox: {
-        marginTop: "50px",
-        display: 'flex',
-        width: '315px',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        margin: '0px 40px'
-    },
-
     cardImage: {
         width: '250px',
         height: '200px',
