@@ -3,11 +3,11 @@ import {Box} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 import CollegeCard from './collegeCard';
 import Colleges from '../config/colleges';
-import {secondaryBgColor} from './themes/color';
+import {mainWhite, secondaryBgColor} from './themes/color';
 
 const useStyles = makeStyles( theme => ({
     root:{
-        background:secondaryBgColor,
+        background: `${mainWhite}`,
         display:'flex',
         justifyContent:'center',
         minheight:'100vh'

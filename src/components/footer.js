@@ -1,16 +1,24 @@
 import React from 'react';
 import { Box, Typography, Link } from '@material-ui/core';
-import {mainBlue} from '../components/themes/color';
+import {mainBlue, quartFont} from '../components/themes/color';
 import {makeStyles} from '@material-ui/core/styles';
+import footerImage from '../assets/img/footer.svg'
 
 const useStyles = makeStyles({
     root:{
-        background: mainBlue,
-        height:'50px',
+        background: `url(${footerImage})`,
+        backgroundRepeat: 'no-repeat',
+        height:'200px',
         color:'white',
         display:'flex',
         flexDirection:'column',
-        justifyContent:'center'
+        justifyContent:'center',
+    },
+    footerText: {
+        marginTop: '100px',
+        fontFamily: `${quartFont}`,
+        fontWeight: '300',
+        fontSize: '16px'
     }
 });
 
@@ -19,12 +27,16 @@ const Footer = () => {
 
     return (
         <Box className={classes.root}>
-            <Typography variant="body2" color={mainBlue} align="center">
-                {'Copyright © '}
+            <Typography className={classes.footerText} variant="body2" color={mainBlue} align="center">
+                {'© '}
+                {new Date().getFullYear()}
+                {' '}
                 <Link color="inherit" href="https://material-ui.com/">
                     Unifind
                 </Link>{' '}
-                {new Date().getFullYear()}
+                {','}
+                {' '}
+                All Rights Reserved
                 {'.'}
             </Typography>
         </Box>
