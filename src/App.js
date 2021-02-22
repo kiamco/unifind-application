@@ -6,7 +6,7 @@ import RepDash from './pages/repDashboard';
 import Dashboard from './pages/dashboard';
 import { Route } from 'react-router-dom';
 import PrivateRoute from './components/auth/privateRoute';
-import {Container} from '@material-ui/core';
+import StudentServices from './pages/studentServices';
 import './index.css'
 
 
@@ -18,6 +18,7 @@ function App(props) {
       <Route exact path='/signup' render={props => <Signup {...props} />}/>
       <Route exact path='/reps/:collegeName' component={RepDash} />
       <PrivateRoute exact path='/dashboard/:name' component={Dashboard} />
+      <Route exact path='/test' render={props => <StudentServices {...props} />} />
     </div>
   );
 };
