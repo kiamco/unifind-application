@@ -3,7 +3,7 @@ import { Box, Typography} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import CollegeCard from './collegeCard';
 import Colleges from '../config/colleges';
-import { mainWhite, secondaryBgColor } from './themes/color';
+import { mainWhite, secondaryBgColor, regFont, mainBlue} from './themes/color';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
@@ -35,6 +35,12 @@ const useStyles = makeStyles(theme => ({
         //     gridTemplateColumns: '300px ',
         //     gridTemplateRows: '300px ',
         // }
+    },
+    header: {
+        color:`${mainBlue}`,
+        fontFamily:`${regFont}`,
+        fontSize:'2rem',
+        fontWeight:'600'
     }
 }));
 
@@ -49,7 +55,7 @@ const CollegeList = (props) => {
     };
     return (
         <Box className={classes.root}>
-            <Typography variant={'h2'}>Choose A Unimentor From</Typography>
+            <Typography className={classes.header} variant={'h2'}>Choose A Unimentor From</Typography>
 
             <AliceCarousel
                 mouseTracking
