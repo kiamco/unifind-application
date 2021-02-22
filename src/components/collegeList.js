@@ -1,48 +1,60 @@
 import React from 'react';
-import {Box} from '@material-ui/core';
-import {makeStyles} from '@material-ui/core/styles';
+import { Box, Typography} from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import CollegeCard from './collegeCard';
 import Colleges from '../config/colleges';
-import {mainWhite, secondaryBgColor} from './themes/color';
+import { mainWhite, secondaryBgColor } from './themes/color';
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
-const useStyles = makeStyles( theme => ({
-    root:{
+
+const useStyles = makeStyles(theme => ({
+    root: {
         background: `${mainWhite}`,
-        display:'flex',
-        justifyContent:'center',
-        minheight:'100vh'
+        display: 'flex',
+        flexFlow:'column',
+        alignItems:'center',
+        justifyContent: 'center',
+        minheight: '60vh'
     },
-    wrapper:{
-        display:'grid',
-        gridGap:'10px',
-        gridTemplateColumns:'300px 300px 300px 300px 300px',
-        gridTemplateRows:'300px 300px 300px 300px 300px',
-        margin:'0 50px',
-        [theme.breakpoints.down('lg')]:{
-            gridTemplateColumns:'300px 300px 300px 300px',
-            gridTemplateRows:'300px 300px 300px ', 
-        },
-        [theme.breakpoints.down('md')]:{
-            gridTemplateColumns:'300px 300px ',
-            gridTemplateRows:'300px 300px', 
-        },
-        [theme.breakpoints.down('xs')]:{
-            gridTemplateColumns:'300px ',
-            gridTemplateRows:'300px ', 
-        }
+    wrapper: {
+        // display: 'grid',
+        // gridGap: '10px',
+        // gridTemplateColumns: '300px 300px 300px 300px 300px',
+        // gridTemplateRows: '300px 300px 300px 300px 300px',
+        // margin: '0 50px',
+        // [theme.breakpoints.down('lg')]: {
+        //     gridTemplateColumns: '300px 300px 300px 300px',
+        //     gridTemplateRows: '300px 300px 300px ',
+        // },
+        // [theme.breakpoints.down('md')]: {
+        //     gridTemplateColumns: '300px 300px ',
+        //     gridTemplateRows: '300px 300px',
+        // },
+        // [theme.breakpoints.down('xs')]: {
+        //     gridTemplateColumns: '300px ',
+        //     gridTemplateRows: '300px ',
+        // }
     }
 }));
 
 const CollegeList = (props) => {
 
     const classes = useStyles();
-    return(
+
+    const responsive = {
+        0: { items: 1 },
+        568: { items: 3 },
+        1024: { items: 3 },
+    };
+    return (
         <Box className={classes.root}>
-            <Box className={classes.wrapper}>
-            {
-                Colleges.map(el => <CollegeCard key={el.college} {...props} {...el}/>)
-            }
-            </Box>
+            <Typography variant={'h2'}>Choose A Unimentor From</Typography>
+
+            <AliceCarousel
+                mouseTracking
+                items={Colleges.map(el => <CollegeCard key={el.college} {...props} {...el} />)}
+                responsive={responsive} />
         </Box>
     )
 };
