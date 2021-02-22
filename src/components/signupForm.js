@@ -21,6 +21,8 @@ import primaryImg from '../assets/img/create_account.png';
 import { mainBlue } from './themes/color';
 import ErrorMessage from './errorMsg';
 import Axios from 'axios';
+import Wave from '../assets/img/footer.png'
+
 
 function Copyright() {
   return (
@@ -45,10 +47,16 @@ const useStyles = makeStyles((theme) => ({
   image: {
     backgroundImage: `url(${primaryImg})`,
     backgroundRepeat: 'no-repeat',
-    backgroundColor: mainBlue,
+    backgroundColor: 'white',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    backgroundSize: '500px'
+    backgroundSize: '500px',
+    display:'flex',
+    alignItems:'flex-end'
+  },
+  wave: {
+    maxWidth:"100%",
+  maxHeight:"100%"
   },
   paper: {
     margin: theme.spacing(8, 4),
@@ -186,7 +194,11 @@ const CreateAccountForm = (props) => {
       </Backdrop>
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
-        <Grid item xs={false} sm={4} md={7} className={classes.image} />
+        <Grid item xs={false} sm={4} md={7} className={classes.image} >
+        <Box>
+          <img classeName={classes.wave} style={{maxWidth:"100%",maxHeight:"100%"}}src={Wave}></img>
+          </Box>
+        </Grid>
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <div className={classes.paper}>
             <Avatar className={classes.avatar}>

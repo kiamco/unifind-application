@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
   },
   wave: {
     maxWidth:"100%",
-  maxHeight:"100%"
+    maxHeight:"100%"
   },
   paper: {
     margin: theme.spacing(8, 4),
@@ -142,7 +142,7 @@ const SignInForm = (props) => {
         <CssBaseline />
         <Grid item xs={false} sm={4} md={7} className={classes.image}>
           <Box>
-          <img classeName={classes.wave} src={Wave}></img>
+          <img classeName={classes.wave} style={{maxWidth:"100%",maxHeight:"100%"}} src={Wave}></img>
           </Box>
         </Grid>
         
