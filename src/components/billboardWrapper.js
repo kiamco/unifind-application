@@ -6,7 +6,7 @@ import BillboardWave from '../assets/img/billboard_wave.png';
 
 const useStyles = makeStyles({
     root:{
-        height:"100vh",
+        height:"71vh",
         background:`no-repeat url(${BillboardWave}) left/50%`,
         backgroundPositionY:'top'
     },
@@ -17,8 +17,6 @@ const useStyles = makeStyles({
 });
 
 const BillboardWrapper = (props) => {
-    console.log(props)
-
     const classes = useStyles();
 
     return (

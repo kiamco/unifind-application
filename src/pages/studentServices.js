@@ -6,6 +6,8 @@ import BillboardImg from '../assets/img/student_service_img.png'
 import {secondaryFont, mainBlue} from '../components/themes/color';
 import Colleges from '../config/colleges';
 import Filter from '../components/uniFilter';
+import UniRepLIst from '../components/uniRepList';
+import UniRepList from '../components/uniRepList';
 
 const useStyles = makeStyles({
    billboardConent:{
@@ -51,6 +53,7 @@ const StudentServices = (props) => {
     const classes = useStyles();
     const universityList = Colleges.map(el => el.college)
     const [uni, setUni]  = useState(universityList[0]);
+    const filteredCollege = Colleges.filter(el => el.college === uni)
     
     return (
         <Box>
@@ -62,13 +65,12 @@ const StudentServices = (props) => {
                     </Box>
                     <Box className={classes.right}>
                         <Typography variant='h1' className={classes.boardHeader}> Chat With A Current University Student Of Your Choice</Typography>
-                        <Typography variant='p' className={classes.boardDescription}> Learn about Canadian universities and their programs, get supplimentary application help from students who have already been accepted to your dream program/university, and get the support you need before attending the university!</Typography>
+                        <Typography variant='subtitle1' className={classes.boardDescription}> Learn about Canadian universities and their programs, get supplimentary application help from students who have already been accepted to your dream program/university, and get the support you need before attending the university!</Typography>
                     </Box>
                 </Box>
-                <Filter unis={universityList} uni={uni} setUni={setUni}>
-                        
-                </Filter>
             </BillboardWrapper>
+            <Filter unis={universityList} uni={uni} setUni={setUni} />
+            <UniRepList {...filteredCollege} uni={uni} {...props}></UniRepList>
             
             {/* billboard */}
             {/* uni filter */}
