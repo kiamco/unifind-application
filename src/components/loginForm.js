@@ -16,7 +16,8 @@ import {
 } from '@material-ui/core';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import { makeStyles } from '@material-ui/core/styles';
-import primarySignInImg from '../assets/img/login.png'
+import primarySignInImg from '../assets/img/login_illustartion.png';
+import Wave from '../assets/img/footer.png'
 import { NavLink } from 'react-router-dom';
 import { mainBlue } from './themes/color';
 import ErrorMessage from './errorMsg';
@@ -45,10 +46,16 @@ const useStyles = makeStyles((theme) => ({
   image: {
     backgroundImage: `url(${primarySignInImg})`,
     backgroundRepeat: 'no-repeat',
-    backgroundColor: mainBlue,
+    backgroundColor: 'white',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    backgroundSize: '500px'
+    backgroundSize: '500px',
+    display:'flex',
+    alignItems:'flex-end'
+  },
+  wave: {
+    maxWidth:"100%",
+  maxHeight:"100%"
   },
   paper: {
     margin: theme.spacing(8, 4),
@@ -133,7 +140,12 @@ const SignInForm = (props) => {
       </Backdrop>
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
-        <Grid item xs={false} sm={4} md={7} className={classes.image} />
+        <Grid item xs={false} sm={4} md={7} className={classes.image}>
+          <Box>
+          <img classeName={classes.wave} src={Wave}></img>
+          </Box>
+        </Grid>
+        
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <div className={classes.paper}>
             <Avatar className={classes.avatar}>
@@ -205,6 +217,7 @@ const SignInForm = (props) => {
           </div>
         </Grid>
       </Grid>
+      
     </Box>
   );
 }

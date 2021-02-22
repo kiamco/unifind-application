@@ -17,7 +17,7 @@ import {
 } from '@material-ui/core';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import { makeStyles } from '@material-ui/core/styles';
-import primaryImg from '../assets/img/signup.png';
+import primaryImg from '../assets/img/create_account.png';
 import { mainBlue } from './themes/color';
 import ErrorMessage from './errorMsg';
 import Axios from 'axios';

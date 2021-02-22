@@ -6,8 +6,8 @@ import BillboardImg from '../assets/img/student_service_img.png'
 import {secondaryFont, mainBlue} from '../components/themes/color';
 import Colleges from '../config/colleges';
 import Filter from '../components/uniFilter';
-import UniRepLIst from '../components/uniRepList';
 import UniRepList from '../components/uniRepList';
+import FooterV2 from '../components/footerV2';
 
 const useStyles = makeStyles({
    billboardConent:{
@@ -71,7 +71,7 @@ const StudentServices = (props) => {
             </BillboardWrapper>
             <Filter unis={universityList} uni={uni} setUni={setUni} />
             <UniRepList {...filteredCollege} uni={uni} {...props}></UniRepList>
-            
+            <FooterV2 />
             {/* billboard */}
             {/* uni filter */}
             {/* rep list */}
