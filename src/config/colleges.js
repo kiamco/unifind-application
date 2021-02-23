@@ -26,6 +26,7 @@ import Sarrah from  '../assets/img/reps/sarrah.jpeg';
 import Sydney from  '../assets/img/reps/sydney.jpeg';
 import Talia from  '../assets/img/reps/talia.jpeg';
 import Veronica from  '../assets/img/reps/veronica.jpeg';
+import Nina from '../assets/img/reps/nina.JPG'
 
 
 const colleges = [{
@@ -168,7 +169,8 @@ const colleges = [{
             {
                 name: "Nina Gasbarre",
                 type: "President",
-                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4831566"
+                calendarLink: "https://app.acuityscheduling.com/schedule.php?owner=21324571&calendarID=4831566",
+                pic: Nina
             },
             {
                 name: "Sarrah Chakera",

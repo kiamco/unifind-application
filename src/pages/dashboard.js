@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '../components/nav';
-import CollegeList from '../components/collegeList';
+import CollegeListDashboard from '../components/collegeListDashboard';
 import Footer from '../components/footer';
 
 const Dashboard = (props) => {
@@ -9,7 +9,7 @@ const Dashboard = (props) => {
     return(
         <>
         <Nav login={true} name={dashboardName}/>
-        <CollegeList {...props} />
+        <CollegeListDashboard {...props} />
         <Footer />
         </>
     )
