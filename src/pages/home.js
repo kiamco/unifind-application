@@ -7,6 +7,8 @@ import CollegeList from '../components/collegeList';
 import Footer from '../components/footerV2';
 import InfoSection from '../components/infoSection';
 import HowToSection from '../components/howtoSection';
+import Testimonials from '../components/testimonials';
+
 const Home = (props) => {
     return (
         <Box>
@@ -16,6 +18,7 @@ const Home = (props) => {
             <InfoSection />
             <CollegeList {...props} />
             <HowToSection />
+            <Testimonials />
             <Footer />
         </Box>
     );

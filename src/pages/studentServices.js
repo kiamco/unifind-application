@@ -9,6 +9,7 @@ import Filter from '../components/uniFilter';
 import UniRepList from '../components/uniRepList';
 import FooterV2 from '../components/footerV2';
 import Nav from '../components/nav';
+import Testimonials from '../components/testimonials';
 
 const useStyles = makeStyles({
    billboardConent:{
@@ -97,6 +98,8 @@ const StudentServices = (props) => {
             </BillboardWrapper>
             <Filter unis={universityList} uni={uni} setUni={setUni} />
             <UniRepList {...filteredCollege} uni={uni} {...props}></UniRepList>
+            <Testimonials />
+
             <FooterV2 />
             {/* billboard */}
             {/* uni filter */}
