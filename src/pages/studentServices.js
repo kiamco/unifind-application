@@ -8,6 +8,7 @@ import Colleges from '../config/colleges';
 import Filter from '../components/uniFilter';
 import UniRepList from '../components/uniRepList';
 import FooterV2 from '../components/footerV2';
+import Nav from '../components/nav';
 
 const useStyles = makeStyles({
    billboardConent:{
@@ -15,36 +16,60 @@ const useStyles = makeStyles({
         flexFlow:'row',
         alignItems:'center',
         justifyContent:'space-around',
-        height: '600px'
+        height: '600px',
+        ['@media (max-width:900px)']:{
+            height: '400px'
+        }
+        
    },
    left:{
         width:'50%',
         display:'flex',
-        justifyContent:'center'
+        justifyContent:'center',
+        ['@media (max-width:800px)']:{
+            display:'none'
+        }
    },
    img:{
         maxWidth:'550px',
-        marginLeft:'250px'
+        marginLeft:'250px',
+        ['@media (max-width:900px)']:{
+            maxWidth:'400px',
+        }
    },
    right:{
        display:'flex',
        flexFlow:'column',
        alignItems:'center',
        width:'30%',
-       marginRight:'100px'
+       marginRight:'100px',
+       ['@media (max-width:900px)']:{
+        marginRight:'50px'
+    },  
+    
+       ['@media (max-width:800px)']:{
+        width:"70%",
+        margin:'auto 5px'
+    }
    },
    boardHeader:{
        fontFamily: `${secondaryFont}`,
        fontSize: '2rem',
        fontWeight: '500',
-       color:`${mainBlue}`
+       color:`${mainBlue}`,
+       ['@media (max-width:900px)']:{
+        fontSize:'1.5rem'
+    },
    },
    boardDescription: {
         fontFamily: `${secondaryFont}`,
         fontSize: '1.3rem',
         lineHeight: '1.4',
         marginTop: '20px',
-        fontWeight:'100'
+        fontWeight:'100',
+        ['@media (max-width:900px)']:{
+            fontSize:'1rem'
+        },
    }
 });
 
@@ -58,6 +83,7 @@ const StudentServices = (props) => {
     return (
         <Box>
             <BillboardWrapper {...props}>
+                <Nav />
                 {/* nav */}
                 <Box className={classes.billboardConent}>
                     <Box className={classes.left}>

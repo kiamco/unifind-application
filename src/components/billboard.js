@@ -17,6 +17,9 @@ const useStyles = makeStyles({
         backgroundSize: "50%",
         backgroundPositionY: "-60px",
         height: "750px",
+        ['@media (max-width:800px)']:{
+            backgroundImage:'none'
+        }
 
     },
     left: {
@@ -25,7 +28,10 @@ const useStyles = makeStyles({
         width: "50%",
         display: "flex",
         justifyContent: "center",
-        marginTop: "-50px"
+        marginTop: "-50px",
+        ['@media (max-width:800px)']:{
+            display:'none'
+        }
     },
     right: {
         marginTop: "-50px"

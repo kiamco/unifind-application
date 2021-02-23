@@ -12,7 +12,8 @@ const useStyles = makeStyles({
         justifyContent: 'start',
         alignItems: 'center',
         minHeight: '500px',
-        background: `${mainWhite}`
+        background: `${mainWhite}`,
+       
     },
     mainTitle: {
         fontFamily: `${tertFont}`,
@@ -27,6 +28,10 @@ const useStyles = makeStyles({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
+
+        ['@media (max-width:800px)']:{
+            flexDirection: 'column',
+        }
         
     },
     cardBox: {
@@ -37,6 +42,7 @@ const useStyles = makeStyles({
         justifyContent: 'center',
         alignItems: 'center',
         margin: '0px 40px'
+
     },
 
     cardImage: {

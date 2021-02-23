@@ -17,30 +17,12 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'center',
         minheight: '60vh'
     },
-    wrapper: {
-        // display: 'grid',
-        // gridGap: '10px',
-        // gridTemplateColumns: '300px 300px 300px 300px 300px',
-        // gridTemplateRows: '300px 300px 300px 300px 300px',
-        // margin: '0 50px',
-        // [theme.breakpoints.down('lg')]: {
-        //     gridTemplateColumns: '300px 300px 300px 300px',
-        //     gridTemplateRows: '300px 300px 300px ',
-        // },
-        // [theme.breakpoints.down('md')]: {
-        //     gridTemplateColumns: '300px 300px ',
-        //     gridTemplateRows: '300px 300px',
-        // },
-        // [theme.breakpoints.down('xs')]: {
-        //     gridTemplateColumns: '300px ',
-        //     gridTemplateRows: '300px ',
-        // }
-    },
     header: {
         color:`${mainBlue}`,
         fontFamily:`${regFont}`,
         fontSize:'2rem',
-        fontWeight:'600'
+        fontWeight:'600',
+        
     }
 }));
 
@@ -50,7 +32,7 @@ const CollegeList = (props) => {
 
     const responsive = {
         0: { items: 1 },
-        568: { items: 3 },
+        600: { items: 2 },
         1024: { items: 3 },
     };
     return (

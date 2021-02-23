@@ -8,11 +8,19 @@ const useStyles = makeStyles({
     root:{
         height:"71vh",
         background:`no-repeat url(${BillboardWave}) left/50%`,
-        backgroundPositionY:'top'
+        backgroundPositionY:'top',
+        ['@media (max-width:900px)']:{
+            height:"61vh"
+        },
+        ['@media (max-width:800px)']:{
+            background:'none',
+            height:"51vh"
+        }
     },
     wave:{
         minWidth:"50%",
         height:"90vh"
+        
     }
 });
 

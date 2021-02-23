@@ -30,7 +30,10 @@ const useStyles = makeStyles({
         height: '200px',
         display: 'flex',
         justifyContent: 'center',
-        flexBasis: '50%'
+        flexBasis: '50%',
+        ['@media (max-width:800px)']:{
+            display:'none',
+        }
     },
     cardTitle: {
         width: '100%',
@@ -62,7 +65,8 @@ const useStyles = makeStyles({
         justifyContent: 'center',
         alignItems: 'center', 
         height: '300px',
-        width: '100%'
+        width: '100%',
+        
     },
     descriptionBox: {
         height: '200px',
@@ -71,7 +75,7 @@ const useStyles = makeStyles({
         justifyContent: 'top',
         alignItems: 'left',
         flexBasis: '50%',
-        marginLeft: '20px'
+        marginLeft: '20px',
     },
     cardStep: {
         width: '100%',

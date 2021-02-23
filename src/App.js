@@ -18,7 +18,7 @@ function App(props) {
       <Route exact path='/signup' render={props => <Signup {...props} />}/>
       <Route exact path='/reps/:collegeName' component={RepDash} />
       <PrivateRoute exact path='/dashboard/:name' component={Dashboard} />
-      <Route exact path='/test' render={props => <StudentServices {...props} />} />
+      <Route exact path='/studentServices' render={props => <StudentServices {...props} />} />
     </div>
   );
 };

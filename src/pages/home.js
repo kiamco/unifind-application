@@ -4,7 +4,7 @@ import Nav from '../components/nav';
 import Billboard from '../components/billboard';
 import Options from '../components/options';
 import CollegeList from '../components/collegeList';
-import Footer from '../components/footer';
+import Footer from '../components/footerV2';
 import InfoSection from '../components/infoSection';
 import HowToSection from '../components/howtoSection';
 const Home = (props) => {

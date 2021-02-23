@@ -9,6 +9,9 @@ const useStyles = makeStyles({
         margin: '100px',
         textAlign:'center',
         color: `${mainBlue}`,
+        ['@media (max-width:800px)']:{
+            margin: '50px',
+        }
     },
     header:{
         fontFamily:`${secondaryFont}`,

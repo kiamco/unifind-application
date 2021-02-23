@@ -8,13 +8,21 @@ import UniRep from './uniRep';
 const useStyles = makeStyles({
     root: {
         margin: '0px 40px',
+        width:'100%',
+        ['@media (max-width:600px)']:{
+            margin:'0px'
+        }
     
     },
     header:{
         fontFamily:`${secondaryFont}`,
         color:`${mainBlue}`,
         fontSize:'1.7rem',
-        fontWeight: '300'
+        fontWeight: '300',
+        margin:'20px',
+        ['@media (max-width:600px)']:{
+            textAlign:'center'
+        }
     },
     cards:{
         display: "flex",

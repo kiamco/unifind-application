@@ -104,15 +104,15 @@ const Nav = ({ login, name, ...props }) => {
 
                         {!login ?
                             <>
-                                <Link style={{ textDecoration: 'none' }} to='/login'>
+                                <Link style={{ textDecoration: 'none' }} to='/studentServices'>
                                     <Button size="large" variant='outlined' className={classes.toolbarButton}>Services</Button>
                                 </Link>
-                                <Link style={{ textDecoration: 'none' }} to='/login'>
+                                {/* <Link style={{ textDecoration: 'none' }} to='/login'>
                                     <Button size="large" variant='outlined' className={classes.toolbarButton}>Our Story</Button>
                                 </Link>
                                 <Link style={{ textDecoration: 'none' }} to='/login'>
                                     <Button size="large" variant='outlined' className={classes.toolbarButton}>FAQ</Button>
-                                </Link>
+                                </Link> */}
                                 <Link style={{ textDecoration: 'none' }} to='/login'>
                                     <Button size="large" variant='outlined' className={classes.toolbarButtonFilled}>Login</Button>
                                 </Link>
