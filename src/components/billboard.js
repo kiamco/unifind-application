@@ -99,7 +99,7 @@ const Billboard = () => {
                 <Box className={classes.message}>
                     <Typography className={classes.mainHeader} variant='h4'>We're on a mission to help you with your transition to a canadian university!</Typography>
                     <Typography className={classes.mainText}>
-                        Jump on a 1-on-1 call with a current university student of your choice.
+                    Jump on a FREE consultation call with one of our executives to learn more about how we can help you!
                     </Typography>
                     <Box className={classes.btnContainer}>
                         <Link style={{ textDecoration: 'none',marginTop:'10px' }} to='/signUp'>
